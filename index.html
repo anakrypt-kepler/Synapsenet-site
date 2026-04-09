@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+  <title>SynapseNet — Decentralized Intelligence Network</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <canvas id="bg-canvas"></canvas>
+
+  <a id="github-link" href="https://github.com/anakrypt-kepler" target="_blank" rel="noopener noreferrer" title="GitHub">
+    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub" id="github-logo" />
+  </a>
+
+  <nav id="spiral-nav">
+    <a class="nav-item active" data-target="hero">SynapseNet</a>
+    <a class="nav-item" data-target="what">What Is</a>
+    <a class="nav-item" data-target="limitations">Limits</a>
+    <a class="nav-item" data-target="philosophy">Philosophy</a>
+    <a class="nav-item" data-target="how">How</a>
+    <a class="nav-item" data-target="web4">Web 4.0</a>
+    <a class="nav-item" data-target="localai">Local AI</a>
+    <a class="nav-item" data-target="knowledge">Knowledge</a>
+    <a class="nav-item" data-target="security">Security</a>
+    <a class="nav-item" data-target="naan">NAAN</a>
+    <a class="nav-item" data-target="implant">Implant</a>
+    <a class="nav-item" data-target="poe">PoE</a>
+    <a class="nav-item" data-target="sourcecode">Source</a>
+    <a class="nav-item" data-target="architecture">Arch</a>
+    <a class="nav-item" data-target="corecode">C++</a>
+    <a class="nav-item" data-target="stats">Stats</a>
+    <a class="nav-item" data-target="build">Build</a>
+    <a class="nav-item" data-target="modules">Modules</a>
+    <a class="nav-item" data-target="inspired">Inspired</a>
+    <a class="nav-item" data-target="footer">The Future</a>
+    <div id="desktop-nav-arrow-wrap">
+      <div id="desktop-nav-arrow" onclick="scrollToNextSection()">&#8595;</div>
+    </div>
+  </nav>
+
+  <svg id="guide-line" viewBox="0 0 1920 1080">
+    <defs>
+      <filter id="guide-glow">
+        <feGaussianBlur stdDeviation="2" result="blur" />
+        <feMerge>
+          <feMergeNode in="blur" />
+          <feMergeNode in="SourceGraphic" />
+        </feMerge>
+      </filter>
+    </defs>
+    <path id="guide-path" d="M 0 0 L 0 0 L 0 0" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1" filter="url(#guide-glow)" />
+
+  </svg>
+
+  <div id="content">
+
+    <section class="section section-hero" data-section="hero">
+      <div class="section-inner">
+        <h1 class="hero-title" data-animate="letters">SynapseNet</h1>
+        <p class="hero-subtitle" data-animate="fade-up">A Decentralized Intelligence Network</p>
+        <div class="hero-quote" data-animate="fade-up" data-delay="0.3">
+          <p>"Satoshi gave us money without banks.<br/>I will give you brains without corporations."</p>
+          <span class="quote-author">— Kepler</span>
+        </div>
+        <div class="hero-meta" data-animate="fade-up" data-delay="0.6">
+          <span>v0.1.0-alphaV4</span>
+          <span>|</span>
+          <span>March 2026</span>
+          <span>|</span>
+          <span>Kepler</span>
+        </div>
+        <div class="scroll-indicator" data-animate="fade-up" data-delay="0.9">
+          <span>tap ↓ arrow</span>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section" data-section="what">
+      <div class="section-inner">
+        <h2 data-animate="letters">What Is SynapseNet</h2>
+        <p data-animate="fade-up">SynapseNet is a decentralized peer-to-peer network for collective intelligence. It is to knowledge what Bitcoin is to money.</p>
+        <p data-animate="fade-up">Bitcoin proved that value can exist without banks. SynapseNet proves that intelligence can exist without corporations.</p>
+
+        <div class="comparison" data-animate="fade-up">
+          <h3>// Bitcoin vs SynapseNet</h3>
+          <div class="compare-grid">
+            <div class="compare-row compare-header">
+              <span></span><span>Bitcoin</span><span>SynapseNet</span>
+            </div>
+            <div class="compare-row" data-animate="fade-up">
+              <span>Type</span><span>Decentralized currency</span><span>Decentralized AI network</span>
+            </div>
+            <div class="compare-row" data-animate="fade-up">
+              <span>Mining</span><span>Mine with hardware</span><span>Mine with intelligence</span>
+            </div>
+            <div class="compare-row" data-animate="fade-up">
+              <span>Creator</span><span>Satoshi</span><span>Kepler</span>
+            </div>
+            <div class="compare-row" data-animate="fade-up">
+              <span>Stores</span><span>Value</span><span>Knowledge</span>
+            </div>
+            <div class="compare-row" data-animate="fade-up">
+              <span>Token</span><span>BTC</span><span>NGT</span>
+            </div>
+            <div class="compare-row" data-animate="fade-up">
+              <span>Consensus</span><span>Proof of Work</span><span>Proof of Emergence</span>
+            </div>
+            <div class="compare-row" data-animate="fade-up">
+              <span>Data</span><span>Blockchain (~850 GB)</span><span>Knowledge Chain (TBD)</span>
+            </div>
+            <div class="compare-row" data-animate="fade-up">
+              <span>Status</span><span>Live since 2009</span><span>In development</span>
+            </div>
+          </div>
+        </div>
+        <p class="dev-notice" data-animate="fade-up">* Visuals shown are from documentation and terminal UI mockups. SynapseNet is currently under active development.</p>
+      </div>
+    </section>
+
+    <section class="section" data-section="limitations">
+      <div class="section-inner">
+        <h2 data-animate="letters">Honest Limitations</h2>
+        <p class="limitations-intro" data-animate="fade-up">What SynapseNet Does Not Guarantee</p>
+
+        <div class="philosophy-block" data-animate="fade-up">
+          <h3>Absolute Security</h3>
+          <p>No system is unhackable. We use battle-tested crypto (Ed25519, AES-256-GCM), but implementation bugs are possible.</p>
+        </div>
+
+        <div class="philosophy-block" data-animate="fade-up">
+          <h3>>50% Collusion</h3>
+          <p>Same 51% problem as Bitcoin. Mitigation: stake + random selection + reputation.</p>
+        </div>
+
+        <div class="philosophy-block" data-animate="fade-up">
+          <h3>Objective Truth</h3>
+          <p>PoE determines CONSENSUS, not TRUTH. We solve coordination, not epistemology.</p>
+        </div>
+
+        <div class="philosophy-block" data-animate="fade-up">
+          <h3>Spam-Free Knowledge</h3>
+          <p>LLM-generated garbage is a real threat. Defenses raise cost but don't eliminate.</p>
+        </div>
+
+        <div class="philosophy-block" data-animate="fade-up">
+          <h3>Guaranteed Token Value</h3>
+          <p>NGT has no intrinsic value. Worth depends on adoption and utility demand.</p>
+        </div>
+
+        <div class="philosophy-block" data-animate="fade-up">
+          <h3>Perfect Privacy</h3>
+          <p>Privacy mode increases anonymity but global adversaries may still correlate patterns. Anonymity is a spectrum.</p>
+        </div>
+
+        <div class="philosophy-block" data-animate="fade-up">
+          <h3>Censorship Immunity</h3>
+          <p>Governments can block Tor, ban software, pressure ISPs. We make censorship expensive, not impossible.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" data-section="philosophy">
+      <div class="section-inner">
+        <h2 data-animate="letters">Core Philosophy</h2>
+
+        <div class="philosophy-block" data-animate="fade-up">
+          <h3>01 // No Masters</h3>
+          <ul>
+            <li>No company owns it</li>
+            <li>No government controls it</li>
+            <li>No central server</li>
+            <li>No single point of failure</li>
+            <li>The network IS the authority</li>
+          </ul>
+        </div>
+
+        <div class="philosophy-block" data-animate="fade-up">
+          <h3>02 // Collective Intelligence</h3>
+          <ul>
+            <li>Every participant contributes knowledge</li>
+            <li>Every contribution makes everyone smarter</li>
+            <li>Local AIs connected to a global brain</li>
+            <li>"The more the network learns, smarter everyone becomes"</li>
+          </ul>
+        </div>
+
+        <div class="philosophy-block" data-animate="fade-up">
+          <h3>03 // Fair Rewards</h3>
+          <ul>
+            <li>Contribute knowledge → earn NGT tokens</li>
+            <li>Validate others' contributions → earn NGT tokens</li>
+            <li>Quality matters (Quality Score system)</li>
+            <li>No mining farms, no hardware arms race</li>
+            <li>Mine with intelligence, not hardware</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" data-section="how">
+      <div class="section-inner">
+        <h2 data-animate="letters">How It Works</h2>
+        <div class="flow-diagram" data-animate="fade-up">
+          <span class="flow-node">USER</span>
+          <span class="flow-arrow">→</span>
+          <span class="flow-node">LOCAL AI</span>
+          <span class="flow-arrow">→</span>
+          <span class="flow-node">KNOWLEDGE NETWORK</span>
+          <span class="flow-arrow">→</span>
+          <span class="flow-node">ALL OTHER LOCAL AIs</span>
+        </div>
+        <div class="how-details" data-animate="fade-up">
+          <h3>What Local AIs Do:</h3>
+          <p>CONTRIBUTE knowledge (from users)</p>
+          <p>RETRIEVE knowledge (to use and learn)</p>
+          <p>VALIDATE others' contributions</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" data-section="web4">
+      <div class="section-inner">
+        <h2 data-animate="letters">Web 4.0</h2>
+        <h3 data-animate="fade-up">Symbiosis of Human + AI</h3>
+        <p data-animate="fade-up">You talk to a local agent — a model you own, running on your hardware.</p>
+        <p data-animate="fade-up">The agent can fetch context from clearnet and onion sources, cross-check it, extract signal, and return a synthesized answer with citations.</p>
+        <p data-animate="fade-up">This is not "search". It is a digital cortex: an extension of cognition that lives on your machine, not on someone else's API.</p>
+        <p data-animate="fade-up">Primary currencies: inference (compute) + useful knowledge (Proof of Emergence)</p>
+        <p class="dev-notice" data-animate="fade-up">* Concept design. Implementation in progress.</p>
+      </div>
+    </section>
+
+    <section class="section" data-section="localai">
+      <div class="section-inner">
+        <h2 data-animate="letters">Local AI Hosting</h2>
+        <p data-animate="fade-up">Every node runs a LOCAL AI model. You own it. You control it.</p>
+        <div class="details-block" data-animate="fade-up">
+          <p>Default: Llama 2 7B Chat (~2.6 GB)</p>
+          <p>Supports: GGUF, ONNX (planned), SafeTensors, PyTorch</p>
+          <p>Examples: Llama 3.x, Mistral 7B, Phi-2/3, CodeLlama, custom fine-tuned</p>
+        </div>
+        <div class="details-block" data-animate="fade-up">
+          <h3>Model Access Control</h3>
+          <p>PRIVATE (default) — only you</p>
+          <p>SHARED (invite-only) — specific nodes</p>
+          <p>PUBLIC — anyone, with rate limits, earn NGT</p>
+          <p>PAID (marketplace) — set your price in NGT</p>
+        </div>
+        <p class="dev-notice" data-animate="fade-up">* Planned architecture. Runtime is under active development.</p>
+      </div>
+    </section>
+
+    <section class="section" data-section="knowledge">
+      <div class="section-inner">
+        <h2 data-animate="letters">Knowledge Network</h2>
+        <p data-animate="fade-up">Distributed database of human knowledge.</p>
+        <ul data-animate="fade-up">
+          <li>No central server — lives across ALL nodes</li>
+          <li>Each node stores fair share (~65 MB)</li>
+          <li>Target capacity: ~850 GB (design goal)</li>
+          <li>Grows forever — no cap</li>
+        </ul>
+        <p class="dev-notice" data-animate="fade-up">* Architecture design from whitepaper. Network not yet live — currently in development.</p>
+      </div>
+    </section>
+
+    <section class="section" data-section="security">
+      <div class="section-inner">
+        <h2 data-animate="letters">Security</h2>
+        <h3 data-animate="fade-up">4 Layers of Crypto</h3>
+        <div class="security-layer" data-animate="fade-up">
+          <h4>Layer 1 // Crypto-Agile Encryption</h4>
+          <p>Ed25519, AES-256-GCM, Kyber, Dilithium</p>
+        </div>
+        <div class="security-layer" data-animate="fade-up">
+          <h4>Layer 2 // Hash-Based PQC</h4>
+          <p>SPHINCS+ (NIST standardized)</p>
+        </div>
+        <div class="security-layer" data-animate="fade-up">
+          <h4>Layer 3 // One-Time Pad</h4>
+          <p>Mathematically unbreakable (optional)</p>
+        </div>
+        <div class="security-layer" data-animate="fade-up">
+          <h4>Layer 4 // Quantum Key Distribution</h4>
+          <p>BB84 / E91 protocol. Future-ready, ~254 km fiber optic.</p>
+        </div>
+        <p class="security-note" data-animate="fade-up">Quantum-ready architecture</p>
+        <p class="dev-notice" data-animate="fade-up">* Security design from documentation. Not yet audited.</p>
+      </div>
+    </section>
+
+    <section class="section" data-section="naan">
+      <div class="section-inner">
+        <h2 data-animate="letters">NAAN</h2>
+        <h3 data-animate="fade-up">Node-Attached Autonomous Agents</h3>
+        <ul data-animate="fade-up">
+          <li>Background agent runs as part of the runtime</li>
+          <li>Not steered by prompts — auditable policy toggles</li>
+          <li>Can perform bounded research (clearnet/Tor)</li>
+          <li>All knowledge passes deterministic PoE rules</li>
+          <li>"Agents Observatory" for human oversight</li>
+        </ul>
+        <div class="details-block" data-animate="fade-up">
+          <h3>Living System Model</h3>
+          <p>SynapseNet becomes a living system: a distributed brain that learns. Nodes contribute compute; attached agents contribute continuous effort.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" data-section="implant">
+      <div class="section-inner">
+        <h2 data-animate="letters">Implant AI Stacks</h2>
+        <p data-animate="fade-up">Future concept: SynapseNet as the decentralized network plane for implant-AI stacks (implant → local hub → network).</p>
+        <p data-animate="fade-up">Raw neural signals stay local by default. Only decoded intents and opt-in artifacts are shared.</p>
+      </div>
+    </section>
+
+    <section class="section" data-section="poe">
+      <div class="section-inner">
+        <h2 data-animate="letters">Proof of Emergence</h2>
+        <p data-animate="fade-up">PoE must be deterministic and verifiable. LLM cannot be consensus.</p>
+        <div class="philosophy-block" data-animate="fade-up">
+          <h3>PoE v1 Proposal</h3>
+          <ul>
+            <li>Two-phase rewards: acceptance + emergence</li>
+            <li>Anti-spam: Hashcash-style PoW</li>
+            <li>Novelty: SimHash/MinHash scoring</li>
+            <li>Peer review: deterministic validator selection</li>
+            <li>Emergence: citation graph PageRank</li>
+            <li>LLM remains useful but outside consensus</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" data-section="sourcecode">
+      <div class="section-inner">
+        <h2 data-animate="letters">Source Code</h2>
+        <p data-animate="fade-up">The full file tree of KeplerSynapseNet — a C++ node daemon for decentralized intelligence.</p>
+        <div class="file-tree" data-animate="fade-up">
+          <div class="file-tree-line is-dir">KeplerSynapseNet/</div>
+          <div class="file-tree-line is-dir">  src/</div>
+          <div class="file-tree-line is-file">    main.cpp              <span class="file-desc">Node orchestration, RPC, P2P dispatch</span></div>
+          <div class="file-tree-line is-dir">    network/              <span class="file-desc">Socket layer + peer discovery + sync</span></div>
+          <div class="file-tree-line is-file">      network.cpp         <span class="file-size">52,272 bytes</span> <span class="file-desc">— P2P TCP engine</span></div>
+          <div class="file-tree-line is-file">      discovery.cpp       <span class="file-size">32,809 bytes</span> <span class="file-desc">— DHT peer discovery</span></div>
+          <div class="file-tree-line is-file">      handshake.cpp       <span class="file-size">12,192 bytes</span> <span class="file-desc">— Ed25519 handshake</span></div>
+          <div class="file-tree-line is-file">      peer_manager.cpp    <span class="file-size">27,965 bytes</span> <span class="file-desc">— Connection pool</span></div>
+          <div class="file-tree-line is-file">      protocol.cpp        <span class="file-size">25,679 bytes</span> <span class="file-desc">— Wire protocol</span></div>
+          <div class="file-tree-line is-dir">    core/                 <span class="file-desc">Ledger, Transfer, Knowledge, PoE v1, Consensus</span></div>
+          <div class="file-tree-line is-file">      consensus.cpp       <span class="file-size">38,154 bytes</span> <span class="file-desc">— PoE consensus engine</span></div>
+          <div class="file-tree-line is-file">      poe_v1_engine.cpp   <span class="file-size">59,246 bytes</span> <span class="file-desc">— Proof of Emergence v1</span></div>
+          <div class="file-tree-line is-file">      ledger.cpp          <span class="file-size">34,215 bytes</span> <span class="file-desc">— NGT ledger &amp; UTXO</span></div>
+          <div class="file-tree-line is-file">      knowledge.cpp       <span class="file-size">22,514 bytes</span> <span class="file-desc">— Knowledge chain</span></div>
+          <div class="file-tree-line is-file">      transfer.cpp        <span class="file-size">53,950 bytes</span> <span class="file-desc">— NGT transfers</span></div>
+          <div class="file-tree-line is-file">      wallet.cpp          <span class="file-size">13,262 bytes</span> <span class="file-desc">— HD wallet + BIP39</span></div>
+          <div class="file-tree-line is-file">      agent_runtime.cpp   <span class="file-size">20,046 bytes</span> <span class="file-desc">— NAAN agent core</span></div>
+          <div class="file-tree-line is-file">      agent_coordination.cpp <span class="file-size">17,378 bytes</span></div>
+          <div class="file-tree-line is-dir">    model/                <span class="file-desc">Model loading / inference / marketplace</span></div>
+          <div class="file-tree-line is-file">      model_loader.cpp    <span class="file-size">40,048 bytes</span> <span class="file-desc">— GGUF model loader</span></div>
+          <div class="file-tree-line is-file">      model_inference.cpp <span class="file-size">31,283 bytes</span> <span class="file-desc">— Local LLM inference</span></div>
+          <div class="file-tree-line is-file">      model_marketplace.cpp <span class="file-size">18,417 bytes</span> <span class="file-desc">— Model P2P market</span></div>
+          <div class="file-tree-line is-dir">    web/                  <span class="file-desc">Web4 search + Tor + context injection</span></div>
+          <div class="file-tree-line is-file">      web_search.cpp      <span class="file-size">40,075 bytes</span> <span class="file-desc">— Clearnet+Tor search</span></div>
+          <div class="file-tree-line is-file">      tor_engine.cpp      <span class="file-size">9,740 bytes</span>  <span class="file-desc">— Tor SOCKS5 engine</span></div>
+          <div class="file-tree-line is-file">      html_extractor.cpp  <span class="file-size">21,283 bytes</span> <span class="file-desc">— Content extractor</span></div>
+          <div class="file-tree-line is-dir">    privacy/              <span class="file-desc">Stealth, Dandelion++, Amnesia</span></div>
+          <div class="file-tree-line is-file">      stealth_address.cpp</div>
+          <div class="file-tree-line is-file">      dandelion.cpp</div>
+          <div class="file-tree-line is-file">      amnesia.cpp</div>
+          <div class="file-tree-line is-file">      onion_service.cpp</div>
+          <div class="file-tree-line is-dir">    quantum/              <span class="file-desc">Post-quantum cryptography</span></div>
+          <div class="file-tree-line is-file">      kyber.cpp           <span class="file-desc">Lattice-based KEM</span></div>
+          <div class="file-tree-line is-file">      dilithium.cpp       <span class="file-desc">PQ digital signatures</span></div>
+          <div class="file-tree-line is-file">      sphincs.cpp         <span class="file-desc">Hash-based signatures</span></div>
+          <div class="file-tree-line is-file">      qkd_bb84.cpp        <span class="file-desc">Quantum key distribution</span></div>
+          <div class="file-tree-line is-dir">    tui/                  <span class="file-desc">ncurses terminal UI</span></div>
+          <div class="file-tree-line is-file">      tui.cpp             <span class="file-size">231,623 bytes</span> <span class="file-desc">— Full terminal interface</span></div>
+          <div class="file-tree-line is-dir">    ide/                  <span class="file-desc">IDE engine (agent, LSP, MCP)</span></div>
+          <div class="file-tree-line is-dir">  include/                <span class="file-desc">Public headers (90+ files)</span></div>
+          <div class="file-tree-line is-dir">  tests/                  <span class="file-desc">C++ tests (267 passing)</span></div>
+          <div class="file-tree-line is-dir">  third_party/</div>
+          <div class="file-tree-line is-file">    llama.cpp             <span class="file-desc">Local LLM inference engine</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" data-section="architecture">
+      <div class="section-inner">
+        <h2 data-animate="letters">Architecture</h2>
+        <p data-animate="fade-up">synapsed — the C++ node daemon that powers every peer in the network.</p>
+
+        <div class="arch-flow">
+          <div class="arch-node arch-node-main" data-animate="fade-up">synapsed<br><span class="arch-sub">C++ Node Daemon</span></div>
+          <div class="arch-arrow" data-animate="fade-up">&darr;</div>
+          <div class="arch-row-grid" data-animate="fade-up">
+            <div class="arch-node">P2P<br><span class="arch-sub">Network</span></div>
+            <div class="arch-node">PoE v1<br><span class="arch-sub">Consensus</span></div>
+            <div class="arch-node">NAAN<br><span class="arch-sub">Agent</span></div>
+            <div class="arch-node">Model<br><span class="arch-sub">Inference</span></div>
+          </div>
+          <div class="arch-arrow" data-animate="fade-up">&darr;</div>
+          <div class="arch-row-grid" data-animate="fade-up">
+            <div class="arch-node">Ledger<br><span class="arch-sub">+ UTXO</span></div>
+            <div class="arch-node">Knowledge<br><span class="arch-sub">Chain</span></div>
+            <div class="arch-node">Privacy<br><span class="arch-sub">Layer</span></div>
+            <div class="arch-node">Quantum<br><span class="arch-sub">Crypto</span></div>
+          </div>
+          <div class="arch-arrow" data-animate="fade-up">&darr;</div>
+          <div class="arch-node arch-node-wide" data-animate="fade-up">Tor / Clearnet Transport</div>
+          <div class="arch-arrow" data-animate="fade-up">&darr;</div>
+          <div class="arch-row-grid arch-row-3" data-animate="fade-up">
+            <div class="arch-node">SQLite DB</div>
+            <div class="arch-node">GGUF Models</div>
+            <div class="arch-node">Config</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" data-section="corecode">
+      <div class="section-inner">
+        <h2 data-animate="letters">Core C++</h2>
+        <p data-animate="fade-up">Real code from the SynapseNet daemon. Written in C++20.</p>
+
+        <div class="code-block">
+          <div class="file-header">src/main.cpp — Daemon Entry Point</div>
+          <pre><code>int main(int argc, char* argv[]) {
+    synapse::registerSignalHandlers(
+        synapse::signalHandler);
+
+    synapse::NodeConfig config;
+    const char* home = std::getenv("HOME");
+    config.dataDir = home
+        ? std::string(home) + "/.synapsenet"
+        : ".synapsenet";
+
+    if (!synapse::parseArgs(argc, argv, config))
+        return 1;
+
+    synapse::ensureDirectories(config);
+
+    auto node = synapse::createSynapseNet();
+    if (!synapse::initializeSynapseNet(
+            *node, config)) {
+        std::cerr &lt;&lt; "Failed to init node\n";
+        return 1;
+    }
+
+    int result = config.cli
+        ? synapse::runSynapseNetCommand(
+              *node, config.commandArgs)
+        : synapse::runSynapseNet(*node);
+
+    synapse::shutdownSynapseNet(*node);
+    return result;
+}</code></pre>
+        </div>
+
+        <div class="code-block">
+          <div class="file-header">include/core/poe_v1_engine.h — PoE v1 Scoring</div>
+          <pre><code>struct PoeV1Config {
+    poe_v1::LimitsV1 limits{};
+    std::string validatorMode = "static";
+    uint64_t validatorMinStakeAtoms = 0;
+    uint32_t validatorsN = 1;
+    uint32_t validatorsM = 1;
+    bool adaptiveQuorum = false;
+    uint32_t powBits = 16;
+    uint64_t acceptanceBaseReward  = 10000000ULL;
+    uint64_t acceptanceMinReward   =  1000000ULL;
+    uint64_t acceptanceMaxReward   = 100000000ULL;
+    uint32_t noveltyBands = 16;
+    uint32_t noveltyMaxHamming = 8;
+    uint32_t maxCitations = 10;
+    uint32_t minSubmitIntervalSeconds = 60;
+};</code></pre>
+        </div>
+
+        <div class="code-block">
+          <div class="file-header">include/network/network.h — P2P Message Handler</div>
+          <pre><code>enum class MessageType {
+    VERSION, VERACK, PING, PONG,
+    GETADDR, ADDR, INV, GETDATA,
+    NOTFOUND, BLOCK, TX,
+    KNOWLEDGE, VOTE, REJECT
+};
+
+struct Message {
+    MessageType type;
+    std::string command;
+    std::vector&lt;uint8_t&gt; payload;
+    std::string from;
+    uint64_t timestamp;
+    uint64_t nonce = 0;
+
+    std::vector&lt;uint8_t&gt; serialize() const;
+    static Message deserialize(
+        const std::vector&lt;uint8_t&gt;&amp; data);
+};
+
+// Register handler:
+network.onMessage(
+    [](const std::string&amp; peerId,
+       const Message&amp; msg) {
+    // dispatch by msg.type
+});</code></pre>
+        </div>
+
+        <div class="code-block">
+          <div class="file-header">include/core/ledger.h — Ledger &amp; UTXO Model</div>
+          <pre><code>enum class EventType : uint8_t {
+    GENESIS = 0,  KNOWLEDGE = 1,
+    TRANSFER = 2, VALIDATION = 3,
+    MODEL_REGISTER = 4,
+    MODEL_ACCESS = 5, PENALTY = 6,
+    POE_ENTRY = 7, POE_VOTE = 8
+};
+
+struct Event {
+    uint64_t id;
+    uint64_t timestamp;
+    EventType type;
+    std::vector&lt;uint8_t&gt; data;
+    crypto::Hash256 prevHash;
+    crypto::Hash256 hash;
+    crypto::PublicKey author;
+    crypto::Signature signature;
+
+    crypto::Hash256 computeHash() const;
+    bool verify() const;
+};</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" data-section="stats">
+      <div class="section-inner">
+        <h2 data-animate="letters">Stats</h2>
+        <p data-animate="fade-up">Project metrics from the KeplerSynapseNet repository.</p>
+        <div class="stat-grid">
+          <div class="stat-item">
+            <span class="stat-number">267</span>
+            <span class="stat-label">Tests Passing</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">90+</span>
+            <span class="stat-label">Header Files</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">160+</span>
+            <span class="stat-label">Source Files</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">1M+</span>
+            <span class="stat-label">Lines of Code — Documentation</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">48</span>
+            <span class="stat-label">Knowledge Sections</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">14</span>
+            <span class="stat-label">Modules</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" data-section="build">
+      <div class="section-inner">
+        <h2 data-animate="letters">Build</h2>
+        <p data-animate="fade-up">From source to running node in four commands.</p>
+
+        <div class="terminal-output">
+          <pre><span class="terminal-prompt">$</span> sudo apt-get install build-essential cmake \
+    libssl-dev libncurses-dev libsqlite3-dev
+<span class="terminal-prompt">$</span> cmake -S KeplerSynapseNet \
+    -B KeplerSynapseNet/build \
+    -DCMAKE_BUILD_TYPE=Release \
+    -DBUILD_TESTS=ON
+<span class="terminal-prompt">$</span> cmake --build KeplerSynapseNet/build \
+    --parallel 8
+<span class="terminal-prompt">$</span> ctest --test-dir KeplerSynapseNet/build \
+    --output-on-failure
+<span class="term-result">  267 tests passed</span>
+<span class="terminal-prompt">$</span> TERM=xterm-256color \
+    ./KeplerSynapseNet/build/synapsed</pre>
+        </div>
+
+        <h3 data-animate="fade-up">// Docker</h3>
+        <div class="terminal-output">
+          <pre><span class="terminal-prompt">$</span> docker compose up --build</pre>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" data-section="modules">
+      <div class="section-inner">
+        <h2 data-animate="letters">Modules</h2>
+        <p data-animate="fade-up">14 modules compose the SynapseNet daemon.</p>
+        <div class="module-grid">
+          <div class="module-card">
+            <h4>core/</h4>
+            <p>Ledger, PoE, Knowledge, Consensus, Wallet, NAAN Agent</p>
+          </div>
+          <div class="module-card">
+            <h4>network/</h4>
+            <p>P2P TCP, DHT Discovery, Ed25519 Handshake, Wire Protocol</p>
+          </div>
+          <div class="module-card">
+            <h4>model/</h4>
+            <p>GGUF Loader, Local Inference, Model Marketplace</p>
+          </div>
+          <div class="module-card">
+            <h4>web/</h4>
+            <p>Web4 Search, Tor Engine, Context Injection</p>
+          </div>
+          <div class="module-card">
+            <h4>privacy/</h4>
+            <p>Dandelion++, Stealth Address, Amnesia Mode, Onion Service</p>
+          </div>
+          <div class="module-card">
+            <h4>quantum/</h4>
+            <p>Kyber, Dilithium, SPHINCS+, QKD BB84</p>
+          </div>
+          <div class="module-card">
+            <h4>tui/</h4>
+            <p>ncurses Full Terminal Interface (231K bytes)</p>
+          </div>
+          <div class="module-card">
+            <h4>ide/</h4>
+            <p>Agent Coordinator, LSP Client, MCP Server</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-inspired" data-section="inspired">
+      <div class="section-inner">
+        <h2 data-animate="letters">Inspired By</h2>
+        <div class="inspired-grid" data-animate="fade-up">
+          <div class="inspired-item" data-animate="fade-up">
+            <img src="bitcoin-logo.png" alt="Bitcoin" class="inspired-img">
+            <p class="inspired-name">Bitcoin</p>
+            <p class="inspired-desc">Decentralized money without banks. Proof that consensus works.</p>
+          </div>
+          <div class="inspired-item" data-animate="fade-up">
+            <img src="piratebay-logo.jpg" alt="The Pirate Bay" class="inspired-img">
+            <p class="inspired-name">The Pirate Bay</p>
+            <p class="inspired-desc">Unstoppable information sharing. Resilience against censorship.</p>
+          </div>
+          <div class="inspired-item" data-animate="fade-up">
+            <img src="tor-logo.png" alt="Tor" class="inspired-img">
+            <p class="inspired-name">Tor</p>
+            <p class="inspired-desc">Anonymous communication. Privacy as a fundamental right.</p>
+          </div>
+          <div class="inspired-item" data-animate="fade-up">
+            <img src="monero-logo.png" alt="Monero" class="inspired-img">
+            <p class="inspired-name">Monero</p>
+            <p class="inspired-desc">True financial privacy. Untraceable by design.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-footer" data-section="footer">
+      <div class="section-inner">
+        <h2 data-animate="letters">The Future</h2>
+        <p class="footer-tagline" data-animate="fade-up">Intelligence belongs to everyone.</p>
+        <div class="footer-meta" data-animate="fade-up">
+          <span>SynapseNet v0.1.0-alphaV4</span>
+          <span>|</span>
+          <span>Kepler</span>
+          <span>|</span>
+          <span>March 2026</span>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <div id="audio-start" onclick="initAudio()">
+    <span>[ mining knowledge ]</span>
+    <span class="audio-hint">sound 100% recommended</span>
+  </div>
+
+  <div id="mobile-nav">
+    <div id="mobile-nav-label"></div>
+    <div id="mobile-nav-arrow" onclick="event.stopPropagation(); scrollToNextSection()">&#8595;</div>
+  </div>
+
+  <div id="chat-toggle" onclick="toggleChat()" title="Ask SynapseNet AI">
+    <span id="chat-toggle-icon">?</span>
+  </div>
+
+  <div id="chat-panel">
+    <div id="chat-header">
+      <span id="chat-title">SynapseNet // Knowledge Bot</span>
+      <span id="chat-close" onclick="toggleChat()">&times;</span>
+    </div>
+    <div id="chat-messages">
+      <div class="chat-msg bot-msg">Welcome to SynapseNet Knowledge Bot.<br><br>I answer questions strictly about the SynapseNet project. Ask me anything.</div>
+    </div>
+    <div id="chat-hints">
+      <span class="hint-label">try:</span>
+      <div id="hint-tags">
+        <span class="hint-tag" onclick="askHint(this)">P2P</span>
+        <span class="hint-tag" onclick="askHint(this)">PoE</span>
+        <span class="hint-tag" onclick="askHint(this)">NGT</span>
+        <span class="hint-tag" onclick="askHint(this)">NAAN</span>
+        <span class="hint-tag" onclick="askHint(this)">Tor</span>
+        <span class="hint-tag" onclick="askHint(this)">obfs4</span>
+        <span class="hint-tag" onclick="askHint(this)">Security</span>
+        <span class="hint-tag" onclick="askHint(this)">Web 4.0</span>
+        <span class="hint-tag" onclick="askHint(this)">Docker</span>
+        <span class="hint-tag" onclick="askHint(this)">Tauri</span>
+        <span class="hint-tag" onclick="askHint(this)">Privacy</span>
+        <span class="hint-tag" onclick="askHint(this)">Architecture</span>
+        <span class="hint-tag" onclick="askHint(this)">Implant</span>
+        <span class="hint-tag" onclick="askHint(this)">Neurochip</span>
+        <span class="hint-tag" onclick="askHint(this)">Wallet</span>
+        <span class="hint-tag" onclick="askHint(this)">UTXO</span>
+        <span class="hint-tag" onclick="askHint(this)">Validators</span>
+        <span class="hint-tag" onclick="askHint(this)">Anti-spam</span>
+        <span class="hint-tag" onclick="askHint(this)">Kepler</span>
+        <span class="hint-tag" onclick="askHint(this)">Gossip</span>
+        <span class="hint-tag" onclick="askHint(this)">Quality Score</span>
+        <span class="hint-tag" onclick="askHint(this)">Phases</span>
+        <span class="hint-tag" onclick="askHint(this)">RPC</span>
+        <span class="hint-tag" onclick="askHint(this)">Ed25519</span>
+        <span class="hint-tag" onclick="askHint(this)">AES-256-GCM</span>
+        <span class="hint-tag" onclick="askHint(this)">SPHINCS+</span>
+        <span class="hint-tag" onclick="askHint(this)">Kyber</span>
+        <span class="hint-tag" onclick="askHint(this)">BB84</span>
+        <span class="hint-tag" onclick="askHint(this)">Quantum</span>
+        <span class="hint-tag" onclick="askHint(this)">Post-quantum</span>
+        <span class="hint-tag" onclick="askHint(this)">OTP</span>
+        <span class="hint-tag" onclick="askHint(this)">SimHash</span>
+        <span class="hint-tag" onclick="askHint(this)">MinHash</span>
+        <span class="hint-tag" onclick="askHint(this)">PageRank</span>
+        <span class="hint-tag" onclick="askHint(this)">Hashcash</span>
+        <span class="hint-tag" onclick="askHint(this)">Dandelion++</span>
+        <span class="hint-tag" onclick="askHint(this)">Stealth address</span>
+        <span class="hint-tag" onclick="askHint(this)">Amnesia mode</span>
+        <span class="hint-tag" onclick="askHint(this)">Sybil</span>
+        <span class="hint-tag" onclick="askHint(this)">Stake</span>
+        <span class="hint-tag" onclick="askHint(this)">Tokenomics</span>
+        <span class="hint-tag" onclick="askHint(this)">Earn NGT</span>
+        <span class="hint-tag" onclick="askHint(this)">Knowledge Chain</span>
+        <span class="hint-tag" onclick="askHint(this)">Knowledge Network</span>
+        <span class="hint-tag" onclick="askHint(this)">Replication</span>
+        <span class="hint-tag" onclick="askHint(this)">GGUF</span>
+        <span class="hint-tag" onclick="askHint(this)">Llama</span>
+        <span class="hint-tag" onclick="askHint(this)">Mistral</span>
+        <span class="hint-tag" onclick="askHint(this)">CodeLlama</span>
+        <span class="hint-tag" onclick="askHint(this)">Model marketplace</span>
+        <span class="hint-tag" onclick="askHint(this)">Local AI</span>
+        <span class="hint-tag" onclick="askHint(this)">Inference</span>
+        <span class="hint-tag" onclick="askHint(this)">Bitcoin vs SynapseNet</span>
+        <span class="hint-tag" onclick="askHint(this)">Satoshi</span>
+        <span class="hint-tag" onclick="askHint(this)">Limitations</span>
+        <span class="hint-tag" onclick="askHint(this)">Philosophy</span>
+        <span class="hint-tag" onclick="askHint(this)">Creator rules</span>
+        <span class="hint-tag" onclick="askHint(this)">Contributing</span>
+        <span class="hint-tag" onclick="askHint(this)">Release history</span>
+        <span class="hint-tag" onclick="askHint(this)">Deferred features</span>
+        <span class="hint-tag" onclick="askHint(this)">V0.2 status</span>
+        <span class="hint-tag" onclick="askHint(this)">TUI</span>
+        <span class="hint-tag" onclick="askHint(this)">SynapseIDE</span>
+        <span class="hint-tag" onclick="askHint(this)">Python sandbox</span>
+        <span class="hint-tag" onclick="askHint(this)">Boot sequence</span>
+        <span class="hint-tag" onclick="askHint(this)">Update governance</span>
+        <span class="hint-tag" onclick="askHint(this)">Use cases</span>
+        <span class="hint-tag" onclick="askHint(this)">Journalists</span>
+        <span class="hint-tag" onclick="askHint(this)">Observatory</span>
+        <span class="hint-tag" onclick="askHint(this)">Wire protocol</span>
+        <span class="hint-tag" onclick="askHint(this)">Peer discovery</span>
+        <span class="hint-tag" onclick="askHint(this)">SOCKS5</span>
+        <span class="hint-tag" onclick="askHint(this)">Darknet</span>
+        <span class="hint-tag" onclick="askHint(this)">Onion</span>
+        <span class="hint-tag" onclick="askHint(this)">Clearnet</span>
+        <span class="hint-tag" onclick="askHint(this)">C++</span>
+        <span class="hint-tag" onclick="askHint(this)">Remediation</span>
+        <span class="hint-tag" onclick="askHint(this)">Mainnet</span>
+        <span class="hint-tag" onclick="askHint(this)">Devnet</span>
+        <span class="hint-tag" onclick="askHint(this)">Genesis</span>
+        <span class="hint-tag" onclick="askHint(this)">Emission model</span>
+        <span class="hint-tag" onclick="askHint(this)">Seed nodes</span>
+        <span class="hint-tag" onclick="askHint(this)">Multi-agent</span>
+        <span class="hint-tag" onclick="askHint(this)">Agent coordination</span>
+        <span class="hint-tag" onclick="askHint(this)">Citation graph</span>
+        <span class="hint-tag" onclick="askHint(this)">Deterministic</span>
+        <span class="hint-tag" onclick="askHint(this)">Whitepaper</span>
+        <span class="hint-tag" onclick="askHint(this)">Open source</span>
+        <span class="hint-tag" onclick="askHint(this)">BIP39</span>
+        <span class="hint-tag" onclick="askHint(this)">Seed phrase</span>
+        <span class="hint-tag" onclick="askHint(this)">Transaction</span>
+        <span class="hint-tag" onclick="askHint(this)">DoS protection</span>
+        <span class="hint-tag" onclick="askHint(this)">Rate limiting</span>
+        <span class="hint-tag" onclick="askHint(this)">51% attack</span>
+        <span class="hint-tag" onclick="askHint(this)">Censorship</span>
+        <span class="hint-tag" onclick="askHint(this)">BCI</span>
+      </div>
+    </div>
+    <div id="chat-input-area">
+      <input type="text" id="chat-input" placeholder="Ask about SynapseNet..." onkeydown="if(event.key==='Enter')sendChat()" autocomplete="off" />
+      <button id="chat-send" onclick="sendChat()">&gt;</button>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+    }
+  }
+  </script>
+  <script type="module" src="app.js"></script>
+  <script src="audio.js"></script>
+  <script src="chatbot-client.js"></script>
+  <script src="chat-widget.js"></script>
+</body>
+</html>

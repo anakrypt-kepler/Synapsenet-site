@@ -1,0 +1,698 @@
+{
+  "project": {
+    "name": "SynapseNet",
+    "version": "v0.1.0-alphaV4",
+    "date": "March 2026",
+    "creator": "Kepler",
+    "tagline": "A Decentralized Intelligence Network",
+    "motto": "Intelligence belongs to everyone.",
+    "quote": "Satoshi gave us money without banks. I will give you brains without corporations. — Kepler",
+    "github": "https://github.com/anakrypt-kepler/SynapseNet",
+    "github_ai": "https://github.com/anakrypt-kepler/Synapsenetai"
+  },
+  "sections": [
+    {
+      "id": "what_is_synapsenet",
+      "title": "What Is SynapseNet",
+      "keywords": [
+        "synapsenet", "what is synapsenet", "overview", "introduction", "decentralized", "intelligence",
+        "network", "p2p", "peer-to-peer", "knowledge", "bitcoin", "comparison", "collective intelligence",
+        "ai network", "mining intelligence", "neural gold", "ngt", "kepler", "decentralized ai",
+        "distributed ai", "open network", "global brain", "collective knowledge", "blockchain for knowledge",
+        "explain synapsenet", "about synapsenet", "synapsenet description"
+      ],
+      "content": "SynapseNet is a decentralized peer-to-peer network for collective intelligence. It is to KNOWLEDGE what Bitcoin is to MONEY. Bitcoin proved that value can exist without banks; SynapseNet proves that intelligence can exist without corporations. Created by Kepler, SynapseNet lets nodes mine intelligence instead of hashes. Contributors feed useful knowledge into an open network, every local AI can draw from it, and contributors are rewarded with NGT (Neural Gold Token) through a consensus mechanism called Proof of Emergence (PoE).\n\nComparison with Bitcoin:\n- Bitcoin: Decentralized currency | SynapseNet: Decentralized AI network\n- Bitcoin: Mine with hardware | SynapseNet: Mine with intelligence\n- Bitcoin: Created by Satoshi | SynapseNet: Created by Kepler\n- Bitcoin: Store value | SynapseNet: Store knowledge\n- Bitcoin: BTC token | SynapseNet: NGT token\n- Bitcoin: Proof of Work | SynapseNet: Proof of Emergence\n- Bitcoin: Blockchain (~850 GB) | SynapseNet: Knowledge Chain (~847 GB+ design target)\n\nThe flow: USER → LOCAL AI → KNOWLEDGE NETWORK → ALL OTHER LOCAL AIs. Local AIs contribute knowledge (from users), retrieve knowledge (to use and learn), and validate others' contributions. Every node is a neuron. Every contribution is a synapse. Together, participants build a global brain that belongs to no one and everyone."
+    },
+    {
+      "id": "creator_and_origin",
+      "title": "Creator, Origin Story, and Project History",
+      "keywords": [
+        "kepler", "creator", "founder", "origin", "history", "why synapsenet", "story", "prototype",
+        "rust prototype", "c++ prototype", "2023", "2026", "development", "journey", "anakrypt-kepler",
+        "github anakrypt-kepler", "first prototype", "failed prototype", "rewrite", "million lines",
+        "three years", "local development", "no github", "personal project"
+      ],
+      "content": "SynapseNet was created by Kepler (GitHub: anakrypt-kepler). The idea sprang from everyday habits of exploring knowledge networks, tinkering with Tor, and chatting with local AIs. Kepler asked: why not let people feed useful knowledge into an open network, let every AI draw from it, and reward the contributors? That's why it is called 'mining intelligence.'\n\nProject history:\n1. First prototype (Rust, started 2023): Around 200,000 lines of code and documentation. A chat interface with a local AI where you'd write something, the model would evaluate it, and you'd get NGT as a reward. The fatal mistake was trusting the local AI to decide how much you'd earn — different models, hardware, and quantization produced non-deterministic results. That prototype failed, but taught the most important design principle: consensus must be deterministic. This led to the design of Proof of Emergence.\n2. Second prototype (C++): Also failed — different problems, same pattern: the architecture wasn't right.\n3. Current version: After years of local development (no GitHub, no public repo, no audience), the project reached approximately 1 million lines of code and documentation. Published first publicly in 2026.\n\nKepler's philosophy: 'I did this because I enjoy it. I didn't care what anyone thought. I just built. I didn't publish the code for three years. I just kept writing, kept debugging, kept redesigning.' The project is developed on macOS M2 256GB, Arch Linux, and Android + Ubuntu (for coding on the go)."
+    },
+    {
+      "id": "creator_rules_immutable",
+      "title": "Creator Rules (Immutable)",
+      "keywords": [
+        "creator rules", "immutable rules", "core rules", "immutable", "kepler rules", "protocol rules",
+        "cannot change", "fork rules", "fork warning", "safeguards", "prohibitions", "ngt burn",
+        "wallet burn", "official project", "unauthorized fork", "core behavior", "bypass"
+      ],
+      "content": "The creator's rules and the project's meaning/purpose are immutable. No one has the right to change them. These interface documents define the core rules and logic of SynapseNet; the core rules/logic must not be altered.\n\nAllowed actions:\n- Improve implementation\n- Fix bugs\n- Add features\n- Expand documentation\n- Optimize performance\n\nAs long as these do not change core behavior or bypass prohibitions/safeguards.\n\nFork rules:\n- Any fork or modification that changes core behavior, removes safeguards, or bypasses prohibitions is NOT an official SynapseNet project.\n- NGT earned by such a fork is not recognized or associated with SynapseNet.\n- Wallets tied to such violations are subject to automatic burn by community decision.\n- NGT cannot be purchased in-protocol; it can only be earned by protocol outcomes or transferred between wallet addresses."
+    },
+    {
+      "id": "honest_limitations",
+      "title": "Honest Limitations",
+      "keywords": [
+        "limitations", "honest limitations", "not guarantee", "security risks", "51% attack",
+        "collusion", "spam", "absolute security", "objective truth", "consensus vs truth",
+        "censorship", "token value", "privacy limits", "what synapsenet cannot do", "risks",
+        "attack vectors", "known issues", "transparency"
+      ],
+      "content": "SynapseNet does NOT guarantee the following (honest engineering over marketing):\n\n1. ABSOLUTE SECURITY: No system is unhackable. Battle-tested crypto (Ed25519, AES-256-GCM) is used, but implementation bugs are possible. The code needs independent security audits before mainnet.\n\n2. PROTECTION AGAINST >50% COLLUSION: If a majority of validators collude, they can approve bad knowledge or reject good knowledge. This is the same 51% problem as Bitcoin. Mitigation: stake requirements + random selection + reputation. But it's not mathematically impossible to attack.\n\n3. OBJECTIVE TRUTH: PoE determines CONSENSUS, not TRUTH. The network can agree on wrong information if validators are fooled or collude. SynapseNet solves coordination, not epistemology.\n\n4. SPAM-FREE KNOWLEDGE: LLM-generated garbage is a real threat. Defenses (stake, validation, rate limits) raise the cost of spam but don't eliminate it. This is an ongoing arms race.\n\n5. GUARANTEED TOKEN VALUE: NGT has no intrinsic value. Its worth depends entirely on network adoption and utility demand. If no one uses SynapseNet, NGT is worthless.\n\n6. PERFECT PRIVACY: Privacy mode significantly increases anonymity but global adversaries (nation-states monitoring all Tor traffic) may still correlate patterns over time. Anonymity is a spectrum.\n\n7. CENSORSHIP IMMUNITY: Governments can block Tor, ban the software, or pressure ISPs. SynapseNet makes censorship expensive, not impossible.\n\nAs Satoshi never claimed Bitcoin was perfect, Kepler follows the same principle: 'The system is secure as long as honest validators collectively control more stake than attackers.'"
+    },
+    {
+      "id": "core_philosophy",
+      "title": "Core Philosophy",
+      "keywords": [
+        "philosophy", "principles", "core principles", "no masters", "collective intelligence",
+        "fair rewards", "decentralization", "no central server", "no company", "no government",
+        "local-first", "cryptography-backed", "deterministic consensus", "privacy boundaries",
+        "no corporate gatekeepers", "intelligence for everyone", "open source", "web4", "web 4.0"
+      ],
+      "content": "SynapseNet's core philosophy rests on three pillars:\n\n1. NO MASTERS:\n- No company owns it\n- No government controls it\n- No central server\n- No single point of failure\n- The network IS the authority\n\n2. COLLECTIVE INTELLIGENCE:\n- Every participant contributes knowledge\n- Every contribution makes everyone smarter\n- Local AIs connected to a global brain\n- 'The more the network learns, smarter everyone becomes'\n\n3. FAIR REWARDS:\n- Contribute knowledge → earn NGT tokens\n- Validate others' contributions → earn NGT tokens\n- Quality matters (Quality Score system)\n- No mining farms, no hardware arms race\n- Mine with intelligence, not hardware\n\nAdditional principles (from README):\n- Local-first by default — data stays on your machine unless you choose otherwise\n- Cryptography-backed integrity — Ed25519, AES-256-GCM, quantum-resistant key support\n- Deterministic consensus — PoE v1 uses deterministic metrics, not LLM scores\n- Privacy boundaries — clear separation between user, device, and network\n- No corporate gatekeepers — intelligence belongs to everyone\n\nKey phrases: 'Mine with Intelligence, not Hardware' | 'Intelligence belongs to everyone' | 'The more the network learns, smarter everyone becomes' | 'Satoshi gave us money without banks. I will give you brains without corporations.'"
+    },
+    {
+      "id": "proof_of_emergence_overview",
+      "title": "Proof of Emergence (PoE) — Overview and Mechanism",
+      "keywords": [
+        "proof of emergence", "poe", "consensus", "consensus mechanism", "knowledge validation",
+        "poe v1", "mining", "knowledge mining", "acceptance reward", "emergence reward",
+        "validator", "validation", "vote", "finalize", "epoch", "reward", "quality score",
+        "submission", "stake", "10 ngt stake", "100 ngt stake", "m-of-n", "3 of 5",
+        "deterministic", "non-deterministic llm", "epoch reward", "citation graph", "pagerank",
+        "novelty score", "simhash", "minhash", "pow gate", "hashcash", "anti-spam pow"
+      ],
+      "content": "Proof of Emergence (PoE) is SynapseNet's consensus mechanism for validating knowledge contributions through economic incentives and random voting. Unlike Proof of Work (which burns energy) or pure Proof of Stake (which validates transactions), PoE rewards USEFUL KNOWLEDGE CONTRIBUTIONS.\n\nKEY DESIGN PRINCIPLE: An LLM score CANNOT be consensus because different hardware/backends produce different outputs (floating point, quantization, tokenization differences). PoE uses deterministic metrics for consensus; LLMs are used only for local UX.\n\nPoE v1 Two-Phase Reward System:\n(A) Acceptance reward (anti-spam, small) — awarded when entry passes PoW + validation\n(B) Emergence reward (later, for measured impact) — based on citation graph at epoch boundaries\n\nStep-by-step PoE Mechanism:\n1. SUBMISSION: User submits knowledge chunk. Must stake minimum 10 NGT (refundable if accepted; lost if rejected as spam). A Hashcash-style PoW is required on: hash(entry_bytes || nonce).\n\n2. NOVELTY CHECK (deterministic): Canonicalize text (lowercase, whitespace normalization). Build shingles (k-grams), compute SimHash and/or MinHash. Compare against nearest entries in local index. noveltyScore = 1.0 - similarityMax.\n\n3. VALIDATION: 5 random validators selected (must have stake > 100 NGT). Validators sign a vote: ACCEPT / REJECT / ABSTAIN with flags (malformed, duplicate, bad citations, spam). Validators are selected deterministically: validators = PRF(prevBlockHash, entryId) → choose N validators. M-of-N votes (3 of 5) finalizes the entry.\n\n4. SCORING: If ACCEPTED: Quality Score = average of validator scores (1-100). Reward = base_rate * quality_score * (1 / (1 + network_load)).\n\n5. PENALTIES: Spam submission → lose stake (10 NGT). Dishonest validator → lose reputation + stake slash. Consistent bad actors → banned from validation.\n\n6. EMERGENCE (epoch-based): Each knowledge entry stores citations[] = IDs of referenced entries. At epoch boundaries, compute a simple PageRank/credit score on the citation graph. Anti-gaming: cap self-citations per author, ignore tight cycles, cap outgoing citations per entry. Distribute epoch reward budget proportional to impact.\n\nMathematical formulation:\n- Let K = knowledge submission, S_k = stake deposited (minimum 10 NGT)\n- Let V = {v1, v2, v3, v4, v5} = randomly selected validators\n- Let S_v = stake of each validator (minimum 100 NGT)\n- ACCEPTANCE CONDITION: K is accepted iff |{v : vote(v,K) = ACCEPT}| >= 3\n- REWARD: reward(K) = base_rate * quality_score * (1 / (1 + network_load))\n- where quality_score = avg(scores from accepting validators)\n- network_load = submissions_per_hour / baseline\n\nCode anchors: KeplerSynapseNet/src/core/poe_v1_objects.cpp, KeplerSynapseNet/src/core/poe_v1_engine.cpp"
+    },
+    {
+      "id": "poe_formal_supplement",
+      "title": "Proof of Emergence — Formal Mathematical Supplement (PoE-FS v1)",
+      "keywords": [
+        "poe formal", "poe-fs v1", "theorem", "proof", "mathematical proof", "determinism theorem",
+        "capability gain", "theorem a", "theorem b", "protocol soundness", "connected vs isolated",
+        "eu a_con", "eu a_iso", "retrieval quality", "delta+", "delta-", "p_rel", "p_bad",
+        "assumptions", "conditional capability", "replay safe", "idempotent", "reward accounting",
+        "whitepaper", "formal supplement", "proof sketch"
+      ],
+      "content": "Document: PoE-FS v1 (Proof of Emergence Formal Supplement), draft for whitepaper integration. Snapshot date: 2026-02-21.\n\nMOTIVATING CLAIM: 'A connected local AI, even a small/medium model, can become more capable than an isolated one because it can use continuously updated, community-validated knowledge.' This claim splits into: (1) protocol-level theorems (determinism, verifiability, idempotence), (2) capability-gain theorem under explicit assumptions, (3) empirical validation.\n\nDEFINITIONS:\n- t = discrete protocol time (ticks/epochs)\n- K_t = accepted knowledge set at time t (PoE-finalized entries only)\n- M_t = retrievable memory induced by K_t\n- L = fixed local model (weights frozen for experiment window)\n- A_iso = isolated system using only L and local static context C0\n- A_con = connected system using L + retrieval over M_t\n- Q = task/query distribution\n- U(a, q) = utility (task score) of answer produced by system a on query q\n- R(q, M_t) = retrieval operator returning evidence set E\n- G(E) = deterministic gating policy for evidence admissibility\n- EU(a) = E_{q ~ Q}[U(a, q)] = expected utility\n\nTHEOREM A (Protocol Soundness for PoE Core):\nGiven identical inputs and identical protocol state, all honest nodes running PoE v1 deterministic rules produce identical outcomes for: (1) canonical content hash/contentId, (2) validation/finalization decision, (3) reward mint operations keyed by rewardId (idempotent under replay).\n\nAssumptions A-P:\n- A-P1: Canonicalization and hashing functions are deterministic\n- A-P2: Validator selection function is deterministic\n- A-P3: Vote verification and finalize threshold M-of-N are deterministic\n- A-P4: rewardId is deterministic and globally unique per reward event type\n- A-P5: State transition function is pure with respect to ordered inputs\n\nTHEOREM B (Connected-vs-Isolated Capability Gain, Conditional):\nSuppose for q ~ Q:\n1) with probability p_rel > 0, retrieval returns at least one relevant, admissible evidence item after gating G,\n2) admissible evidence increases expected correctness by Delta+ > 0 on those relevant cases,\n3) admissible but misleading evidence decreases correctness by at most Delta- with probability p_bad,\n4) p_rel * Delta+ > p_bad * Delta-\nThen: EU(A_con) > EU(A_iso)\nMargin form: EU(A_con) - EU(A_iso) >= p_rel * Delta+ - p_bad * Delta- > 0\n\nWhat can be claimed as proven: SynapseNet PoE pipeline is deterministic and replay-verifiable. Consensus-relevant acceptance and reward transitions are reproducible. Reward issuance can be made idempotent and auditable by rewardId.\n\nWhat can be claimed under assumptions: Connected local AI has higher expected utility than isolated baseline when retrieval quality and gating quality satisfy: p_rel * Delta+ > p_bad * Delta-.\n\nWHAT CANNOT BE CLAIMED as absolute theorem: 'Any connected local AI is always better in every scenario.'"
+    },
+    {
+      "id": "ngt_token_economics",
+      "title": "NGT Token Economics",
+      "keywords": [
+        "ngt", "neural growth token", "token", "tokenomics", "economics", "earn ngt", "how to earn",
+        "emission model", "emission rate", "no cap", "infinite supply", "dynamic emission",
+        "token value", "bootstrap problem", "ngt value", "ngt price", "who earns ngt",
+        "validation reward", "contribution reward", "passive income", "stake", "10 ngt",
+        "100 ngt", "mining reward", "epoch reward", "acceptance reward", "buy ngt",
+        "cannot buy ngt", "earn only", "transfer ngt", "wallet", "balance", "ngt flow"
+      ],
+      "content": "NGT = Neural Growth Token. This is the native token of SynapseNet.\n\nKEY POLICY: NGT cannot be purchased in-protocol; it can only be earned by protocol outcomes or transferred between wallet addresses.\n\nTOKENOMICS (Different from Bitcoin):\n- Bitcoin has a hard cap of 21M; NGT has NO CAP (infinite potential)\n- Bitcoin has halving every 4 years; NGT has dynamic emission (network-based)\n- Bitcoin has a fixed schedule; NGT is adaptive to usage\n- Bitcoin is scarce by design; NGT is scarce by demand\n\nEMISSION FORMULA: emission_rate = base_rate / (1 + network_load_factor)\n- KEY PRINCIPLE: More network activity → LESS new tokens per action\n- More participants → tokens spread thinner\n- Network grows → each token becomes more valuable\n\nEMISSION EXAMPLES:\n- Early (100 users): 50 submissions/hr → 10.0 NGT reward per submit\n- Growing (1K users): 500 submissions/hr → 2.0 NGT reward per submit\n- Active (10K users): 5,000 submissions/hr → 0.5 NGT reward per submit\n- Mature (100K users): 50,000 submissions/hr → 0.1 NGT reward per submit\n- Mass (1M users): 500,000 submissions/hr → 0.02 NGT reward per submit\n\nWHO EARNS NGT:\n1. Knowledge contributors: Contribute valuable knowledge → base_reward * quality_score\n2. Validators: Validate others' contributions → small fee per validation\n3. Node operators: Stay online and support network → passive rewards (minimal)\n4. Model renters: Rent your GPU/model to others → pay in NGT\n5. Early participants: Higher emission rate applies\n\nSTAKE REQUIREMENTS:\n- Submission: 10 NGT minimum stake (refundable if accepted, lost if rejected as spam)\n- Validation: 100 NGT minimum stake per validator\n\nBOOTSTRAP PROBLEM:\nAt launch, NGT has ZERO intrinsic value. Like Bitcoin in 2009, value phases: Phase 0: NGT = 0 value → Phase 1: Early adopters earn NGT → Phase 2: Someone offers to BUY NGT for services/goods → Phase 3: Market price emerges → Phase 4: Utility demand creates floor.\n\nHONEST ASSESSMENT: Phase 2 may never happen. If no one wants to buy NGT, it remains worthless. The technology is sound, but economics depend on adoption.\n\nANTI-SPAM: NGT is NEVER burned as a penalty in normal operation. Community service (forced free validation) is the penalty for bad behavior, NOT confiscation of earned NGT. Wallets tied to unauthorized forks may be subject to automatic burn by community decision."
+    },
+    {
+      "id": "p2p_networking",
+      "title": "P2P Networking — Peer Discovery, Gossip Protocol, and Wire Protocol",
+      "keywords": [
+        "p2p", "peer-to-peer", "networking", "peer discovery", "gossip", "gossip protocol",
+        "bootstrap", "dns seeds", "seed nodes", "peer exchange", "getpeers", "peers",
+        "inv", "getdata", "inventory", "wire protocol", "tcp", "socket", "8333",
+        "version", "verack", "ping", "pong", "handshake", "sync", "scale policy",
+        "dos protection", "token bucket", "adaptive admission", "overload mode",
+        "sybil", "connection flood", "per-ip limit", "per-subnet limit", "eviction",
+        "backpressure", "fanout", "seed health", "quarantine seeds", "network health"
+      ],
+      "content": "SynapseNet uses TCP-based P2P networking with a framed message protocol. The default P2P port is 8333.\n\nPEER DISCOVERY FLOW:\n1. Bootstrap seed list (host:port) — configured in main.cpp, extensible via --seednode\n2. DNS seeds resolution — seed1..seed4.synapsenet.io (4 DNS seed nodes)\n3. Peer exchange via GETPEERS/PEERS messages every 30 seconds\n4. Network addresses include both IP and .onion formats\n\nMESSAGE PROTOCOL (framed with 12-byte command string + payload):\nConnectivity: version / verack / ping / pong\nDiscovery: getpeers / peers / getaddr / addr\nGossip: inv / getdata\nObjects: tx / block / poe_entry / poe_vote / poe_epoch / poe_getinv / poe_inv\nRemote models (opt-in): m_offer / m_rent / m_rentok / m_infer / m_out\n\nGOSSIP FLOW:\n1. NodeA sends inv(type, hash) to NodeB\n2. NodeB sends getdata(type, hash) back to NodeA\n3. NodeA sends object_payload(tx or block or poe object)\n\nDHT/KADEMLIA STATUS: Deferred (March 2026 decision). No DHT or Kademlia implementation exists in the current source tree. The existing peer discovery system using DNS seeds, bootstrap nodes, and peer exchange covers current network requirements. DHT may be revisited when static seed lists become a bottleneck. Prerequisites: Sybil resistance, eclipse attack mitigation, feature flags, integration tests.\n\nNETWORK SCALE HARDENING (v0.2 implemented):\n- Adaptive peer admission with bounded inbound/outbound budgets (ScalePolicy)\n- Per-IP and per-subnet quotas for connection flood and Sybil pressure reduction\n- Overload mode with deterministic entry/exit thresholds and automatic throttling\n- DoS controls: per-peer token buckets, malformed payload penalties, decay-based temporary bans\n- Bounded backpressure for inv/getdata flow under heavy fanout\n- Deterministic consensus vote dedup window and bounded dedup memory\n- Bootstrap seed health rotation with quarantine of unstable seeds\n- 1k/5k/10k-node stress tests with deterministic pass/fail thresholds\n\nNETWORK HEALTH PANEL fields: peer pressure, queue depth, ban counts, consensus lag, network health counters, backpressure metrics.\n\nCode anchors: KeplerSynapseNet/src/network/network.cpp, discovery.cpp, protocol.cpp, scale_policy.cpp"
+    },
+    {
+      "id": "tor_darknet_integration",
+      "title": "Tor / Darknet Integration — Privacy Mode, obfs4, SOCKS5",
+      "keywords": [
+        "tor", "darknet", "onion", ".onion", "socks5", "socks", "obfs4", "bridges",
+        "tor browser", "privacy mode", "onion service", "hidden service", "snowflake",
+        "9050", "9150", "managed tor", "external tor", "tor fail-closed", "tor-first",
+        "bridgedb", "bridge pool", "bootstrap", "tor bootstrap", "circuit ready",
+        "torproject", "tor integration", "darknet search", "tor socks", "tor routing",
+        "ahmia", "torch", "darksearch", "deepsearch", "clearnet through tor",
+        "onion sources", "web4 tor", "tor required", "agent tor", "naan tor"
+      ],
+      "content": "SynapseNet integrates deeply with the Tor anonymity network for privacy-preserving operation.\n\nTOR RUNTIME MODES (agent.tor.mode):\n1. auto — SynapseNet may use existing SOCKS if reachable, and may autostart managed Tor if Tor is required and unavailable. Default managed target ports: 9050/9051.\n2. managed — SynapseNet is allowed to start and own a Tor process. Recommended when operator is not already running a bridge-configured external Tor.\n3. external — SynapseNet is SOCKS client only; managed Tor autostart is disabled. Recommended for bridge workflows (obfs4) and shared setup with Tor Browser + CLI tools. Typical config: SOCKS 127.0.0.1:9150, optional ControlPort 9151.\n\nTOR-FIRST DEFAULTS:\n- agent.tor.required=true (default)\n- fail-closed: if Tor is required and unavailable, block outbound traffic instead of falling back to clearnet\n- All AI Mining (NAAN) outbound web traffic routed through Tor by default\n- Node P2P outbound connections routed through Tor by default\n- Node inbound via onion service when Tor is enabled\n\nOBFS4 BRIDGE SUPPORT:\n- Bridge file storage: <DATA_DIR>/tor/bridges.obfs4.txt\n- Bridge pool cache: <DATA_DIR>/tor/bridge_pool_cache.json\n- Bridge provider chain: obfs4 primary → cached obfs4 → manual file → fail\n- Startup wizard bridge paste flow: press [P] on bridge-mode step\n- Settings menu bridge shortcut: [T] Tor Bridges (paste obfs4)\n- Bridge subset rotation for bootstrap retries: --bootstrap-attempts, --bridge-subset-size\n\nTOR STATUS FIELDS (naan.status / node.status):\n- torRuntimeMode, torSocksPort, torControlPort, torControlReachable\n- torReachable / torSocksReachable, torReadyForWeb, torBootstrapState\n- torConflictHint9050, torManaged, torManagedPid\n- torOnionServiceState, torBridgeProvider, torBridgeCacheAgeSeconds\n- Bootstrap states: SOCKS_LISTENING, BOOTSTRAPPING, READY, DEGRADED, FAILED\n\nDARKNET SEARCH ENGINES (hardcoded defaults):\n- Ahmia (clearnet gateway): http://ahmia.fi/search/\n- Torch (.onion), NotEvil (.onion), DarkSearch (.onion), DeepSearch (.onion)\n- Forums: Dread (.onion), NotEvil (.onion)\n\nRELEVANCE SCORING FORMULA:\nrelevance_score = 2.0 * title_matches + 1.0 * snippet_matches + 1.5 * domain_matches\n\nSHARED EXTERNAL TOR (RECOMMENDED WORKFLOW):\n- One external Tor process on 127.0.0.1:9150 (bridge-enabled)\n- SynapseNet uses agent.tor.mode=external\n- Tor Browser may reuse the same SOCKS5 127.0.0.1:9150\n- CLI tools (curl, w3m) may use the same SOCKS5 port\n- Minimal config: agent.tor.required=true, agent.tor.mode=external, agent.tor.socks_host=127.0.0.1, agent.tor.socks_port=9150\n\nCROSS-PLATFORM SCRIPTS:\n- macOS: tools/macos_tor_obfs4_helper.sh, macos_tor_validate.sh, macos_tor_external_9150_e2e.sh\n- Linux: tools/linux_tor_obfs4_smoke.sh, linux_tor_validate.sh, linux_tor_external_9150_e2e.sh\n- Windows: tools/windows_tor_obfs4_smoke.ps1, windows_tor_validate.ps1, windows_tor_external_9150_e2e.ps1\n\nCode: KeplerSynapseNet/src/web/tor_engine.cpp, tor_fetch.cpp, src/core/tor_route_policy.cpp, tor_process_guard.cpp, tor_bridge_provider.cpp"
+    },
+    {
+      "id": "naan_overview",
+      "title": "NAAN — Node-Attached Autonomous Agent Network",
+      "keywords": [
+        "naan", "node-attached autonomous agent", "node attached agent", "background agent",
+        "autonomous agent", "attached agent", "always-on", "ai mining", "agent network",
+        "agent runtime", "agent scheduler", "living system", "network brain", "research agent",
+        "knowledge agent", "agent loop", "agent coordination", "agent rooms", "observatory",
+        "draft queue", "submission pipeline", "agent score", "quarantine", "throttle",
+        "agent band", "active", "cooldown", "ai mining naan", "background research"
+      ],
+      "content": "NAAN (Node-Attached Autonomous Agent Network) is the always-on background intelligence layer of SynapseNet.\n\nCORE CONCEPT: When a SynapseNet node runs, an attached background agent runs as part of the runtime. One node → one attached agent. The attached agent belongs to the SynapseNet knowledge network, not the user. It exists to improve the collective knowledge base.\n\nAGENT CYCLE (60-second ticks):\n1. Pick topic from knowledge gap index\n2. Research (Tor / clearnet / local) with Tor-first routing by default\n3. Cross-reference knowledge chain\n4. Draft entry with citations\n5. Compute PoW nonce (anti-spam)\n6. Submit to validator pool\n7. M-of-N approval → finalize → NGT reward\n\nDISTRIBUTION: At 100 users running SynapseNet nodes, 100 background agents come online. They coordinate in an agent-to-agent chat layer and continuously propose knowledge improvements.\n\nOPERATOR CONTROLS (LIMITED BY DESIGN):\nOperator CAN: view high-level status (idle/researching/submitting/quarantined)\nOperator CANNOT: chat with the agent, rewrite submissions, override moderation signals, access internal prompt/memory, post into agent-to-agent chat, disable agent while node is running, set custom resource limits\n\nThere is NO opt-out switch inside the UI. To stop the agent, the operator exits synapsed.\n\nAGENT COMPONENTS:\n- AgentRuntime: local LLM + tools (search, fetch, extract, summarize), sandboxed file access, deterministic submission builder\n- AgentScheduler: selects tasks (explore, verify, summarize, refactor, de-duplicate), enforces CPU/RAM/network token budgets\n- AgentSubmissionPipeline: produces KnowledgeEntry proposals, attaches citations and hashes, submits via PoE acceptance gate\n- AgentReputation: internal score for throttling, task priority, and quarantine (not transferable, not redeemable for NGT)\n- AgentChat / Coordination Layer: agent-to-agent rooms for tasks, reviews, disputes, alerts\n- Human Read-Only Observatory: public read-only view into agent rooms and outputs\n\nAGENT TASK CLASSES: RESEARCH, VERIFY, REVIEW, DRAFT, SUBMIT (fixed-priority scheduler)\n\nAGENT SCORE DYNAMICS:\nS_{t+1} = clamp( floor(lambda * S_t) + a*A_t - b*R_t - c*V_t, Smin, Smax )\n- A_t = accepted count, R_t = rejected count, V_t = policy violations, lambda = decay factor\n- Score bands: ACTIVE / THROTTLED / QUARANTINED / RECOVERY\n\nCrash state persisted in: ~/.synapsenet/naan/runtime.state\nScheduler checkpoint: ~/.synapsenet/naan/scheduler.state\n\nCode anchors: KeplerSynapseNet/src/core/agent_runtime.cpp, agent_scheduler.cpp, agent_coordination.cpp, agent_draft_queue.cpp, agent_submission_pipeline.cpp, agent_score.cpp, agent_storage.cpp"
+    },
+    {
+      "id": "naan_security_and_quality",
+      "title": "NAAN — Multi-Agent Quality Control, Security, and Anti-Spam",
+      "keywords": [
+        "naan security", "prompt injection", "poisoning", "citation sanity", "review diversity",
+        "anti-garbage", "spam detection", "duplicate gate", "circular citation", "graph anomaly",
+        "narrative steering", "agent safety", "sandboxed fetch", "extraction risk",
+        "content filter", "agent quarantine", "policy violation", "naan abuse", "fake citations",
+        "llm spam", "citation ring", "topic flood", "agent reputation"
+      ],
+      "content": "MULTI-AGENT QUALITY CONTROL (Anti-Garbage Loop):\n1. Agent drafts an entry proposal (with citations + hashes)\n2. Other agents run deterministic duplicate checks + citation sanity checks\n3. Reviewer agents produce signed review notes (NOT consensus votes)\n4. Only then is the entry submitted through normal PoE acceptance rules\nNote: Reviews can be heuristic/LLM-based, but acceptance must remain deterministic.\n\nSECURITY THREATS AND MITIGATIONS:\n1. Spam / poisoning / pseudo-citations / narrative steering:\n- Keep PoE gates strict and deterministic (costly to spam, cheap to verify)\n- Require citations to be verifiable objects (source hashes, timestamps, canonical URL)\n- Deterministic citation sanity gate: cap citations per entry, detect circular citation clusters, penalize repeated low-signal patterns\n- Reviewer diversity: randomized reviewer selection, independent agent reviewers with adversarial prompts, require cross-cluster agreement before broadcast\n- Quarantine and decay: new/low-score agents go to local-only draft queue first, throttle repeated low-quality submitters, score decays over time\n- Graph anomaly detection: detect tight citation rings, detect sudden coordinated topic floods, down-rank suspicious subgraphs at epoch scoring\n\n2. Prompt injection (web/onion):\n- Treat all fetched content as hostile input, never as instructions\n- Strict tool separation: fetch → extract → schema-validate → summarize\n- Never execute JS, never render active content\n- Sanitize HTML to text with bounded extraction rules\n- Capability sandbox: no filesystem access beyond agent storage, no access to node keys/wallet keys/private user data\n- Hard timeouts + bandwidth caps enforced by protocol\n- Audit trails: store fetched artifacts by hash, store extraction outputs and prompt templates by version hash\n\n3. Update governance:\n- UpdateManifest requires M-of-N maintainer signatures\n- Pinned key set shipped with node (explicit rotation process)\n- Reproducible builds + hash verification before install\n- Staged rollout (canary cohorts → wider propagation)\n- Atomic install + rollback (A/B slots)\n\nANTI-SPAM PoW GATE (mathematical guarantee):\n- lz(x) = number of leading zero bits of H(x)\n- powOk(entryBytes, nonce, D) := (lz(entryBytes || nonce) >= D)\n- P[powOk] = 2^(-D); E[trials] = 2^D\n- Spamming N submissions has expected work: E[trials_spam] = N * 2^D\n\nREVIEWER CAPTURE PROBABILITY:\n- If fraction f of reviewer population is adversarial, N reviewers selected uniformly:\n- P[K = k] = C(fP, k) * C((1-f)P, N-k) / C(P, N)\n- Increasing N and choosing M close to N decreases P[K >= M] sharply unless f is already close to 1"
+    },
+    {
+      "id": "knowledge_network_storage",
+      "title": "Knowledge Network — Storage, DHT, Replication, and Knowledge Chain",
+      "keywords": [
+        "knowledge network", "knowledge chain", "storage", "distributed storage", "replication",
+        "knowledge base", "847 gb", "encrypted storage", "fair share", "65 mb per node",
+        "shard", "knowledge entry", "entry id", "content hash", "citation", "content id",
+        "submit id", "knowledge db", "poe db", "simhash", "minhash", "novelty bands",
+        "shingles", "k-gram", "canonicalize", "canonical text", "duplicate check",
+        "knowledge phases", "genesis", "expansion", "emergence", "collective", "global"
+      ],
+      "content": "The Knowledge Network is the heart of SynapseNet — a distributed database of human knowledge.\n\nCORE CHARACTERISTICS:\n- Distributed: No central server — lives across ALL nodes\n- The NETWORK has full copy; NODES store shards + replicas (encrypted)\n- Each node stores fair share (~65 MB for design target of 847 GB ÷ ~12,847 nodes)\n- Grows forever — no cap, no limits\n- Like a blockchain, but for knowledge instead of transactions\n\nTARGET SCALE (design targets, not live metrics):\n- Target capacity: ~847 GB (similar to Bitcoin's ~850 GB)\n- Projected Year 2: ~1.8 TB\n- Design growth rate: +1.2 GB/day at scale\n\nSTORAGE MODEL (Anti-Deletion):\n- Knowledge is stored LOCALLY on every node\n- Continuously copied/synced to OTHER nodes (encrypted)\n- If Node A deletes → copies exist on Nodes B, C, D...\n- Delete attempt = triggers instant replication FIRST\n- Cannot be destroyed by any single actor\n- Requires >50% collusion to suppress knowledge\n\nFAIR SHARE FORMULA: Total Network Data ÷ Active Nodes = Your Share\nExample: 847.3 GB ÷ 12,847 nodes = ~65.9 MB per node\n\nKNOWLEDGE ENTRY STRUCTURE:\n- entryId (hash), author address/pubkey, timestamp\n- title, text, citations[]\n- nonce, powTarget, contentHash\n- optional: simhash/minhash fingerprints\n\nDETERMINISTIC PRIMITIVES (code):\n- canonicalBodyBytes(): deterministic encoding of all consensus fields\n- contentId() = SHA256(canonicalBodyBytes())\n- submitId() = SHA256(contentId || powNonce)\n- signatureHash() = SHA256(canonicalBodyBytes || powNonce)\n- SimHash buckets for novelty (up to 16 bands, 4-bit partitions)\n\nKNOWLEDGE NETWORK PHASES (design projections):\n1. Genesis [0 - 100K entries] — Network bootstrapped, core contributors join\n2. Expansion [100K - 1M entries] — Community growth, protocol stabilization\n3. Emergence [1M - 10M entries] — Network effect kicks in, self-sustaining growth\n4. Collective [10M - 100M entries] — Mainstream adoption, industry integration\n5. Global [100M+ entries] — Global knowledge infrastructure, AI-human collaboration at scale\n\nCode anchors: KeplerSynapseNet/src/core/knowledge.cpp, poe_v1_engine.cpp, poe_v1_objects.cpp"
+    },
+    {
+      "id": "security_layers",
+      "title": "Security Layers — Cryptography Stack",
+      "keywords": [
+        "security", "security layers", "layer 1", "layer 2", "layer 3", "layer 4",
+        "crypto", "cryptography", "ed25519", "aes-256-gcm", "x25519", "sha-256",
+        "quantum resistant", "post-quantum", "pqc", "crystals-dilithium", "crystals-kyber",
+        "sphincs+", "slh-dsa", "ml-kem", "ml-dsa", "hybrid mode", "hybrid encryption",
+        "one-time pad", "otp", "qkd", "bb84", "key derivation", "hkdf", "deterministic key",
+        "store now decrypt later", "quantum computer", "lattice-based", "hash-based",
+        "layer 0 classic", "layer 1 lattice", "layer 2 hash", "layer 3 otp", "layer 4 qkd",
+        "security stack", "defense in depth"
+      ],
+      "content": "SynapseNet implements a 4-layer quantum security stack. Defense in depth: break one layer, others hold.\n\nLAYER 0: CLASSIC (compatibility + current security) [MANDATORY, always active]\n- Signatures: Ed25519\n- Key Exchange: X25519\n- Encryption: AES-256-GCM\n- Hashing: SHA-256\nVulnerability: Quantum computers can break Ed25519/X25519 with Shor's algorithm.\n\nLAYER 1: LATTICE-BASED PQC (primary quantum defense) [MANDATORY in v0.2+]\n- KEM: ML-KEM-768 (Kyber3) — NIST standardized\n- Signatures: ML-DSA-65 (Dilithium3) — NIST standardized\nBased on lattice problems (Learning With Errors / LWE). No known quantum algorithm breaks them.\nKey sizes: Kyber-768: pubkey=1184, secret=2400, ciphertext=1088; Dilithium: secret=4032, pubkey=1952, signature=3309.\n\nLAYER 2: HASH-BASED PQC (backup if lattices fail) [OPTIONAL for critical transactions]\n- Signatures: SLH-DSA-128s (SPHINCS+) — NIST standardized\nBased on hash functions only. Trade-off: larger signatures (~8 KB vs ~2 KB for Dilithium).\nUse case: Wallet seeds, high-value transactions, critical knowledge entries.\nSecurity assumption: Only requires collision-resistant hash functions exist.\n\nLAYER 3: ONE-TIME PAD (mathematically unbreakable) [OPTIONAL for maximum security data]\n- Algorithm: Vernam Cipher (XOR with random key)\n- Key Source: Hardware RNG (Intel RDRAND / TPM / /dev/random)\n- Key Size: Equal to message size\nThe math: ciphertext = plaintext XOR random_key (information-theoretically secure if key is truly random, same length as message, never reused — proved by Claude Shannon, 1949).\nDETERMINISTIC OTP (for scalability): otp_key = HKDF(master_seed || content_hash || timestamp || length)\nNote: Deterministic OTP reduces to HKDF security — still very strong but not \"true\" OTP.\n\nLAYER 4: QUANTUM KEY DISTRIBUTION [FUTURE — requires specialized hardware]\n- Protocol: BB84 / E91\n- Hardware: Photon generators\n- Range: 100-254 km (current tech)\nUses quantum mechanics for key exchange; eavesdropping is physically detectable (measuring quantum states disturbs them).\nCurrent limitations: Requires fiber optic or line-of-sight, max ~254 km without quantum repeaters, expensive (~$100K+ per endpoint), low key generation rate (~256 bits/minute).\n\nQUANTUM SECURITY RUNTIME STATUS (node.status):\n- enabled, requestedLevel, effectiveLevel, managerInitialized, isQuantumSafe\n- qkdConnected, qkdSessionActive, selectedKEM, selectedSignature, selectedEncryption\n- kyberReal, dilithiumReal, sphincsReal (whether PQC is simulated or real liboqs backend)\n\nSECURITY LEVELS: standard (classic only) | high (hybrid PQC) | paranoid (all layers) | quantum-ready (QKD + hybrid fallback)\n\nCode: KeplerSynapseNet/src/crypto/crypto.cpp, keys.cpp, quantum/hybrid_kem.cpp, hybrid_sig.cpp, kyber.cpp, dilithium.cpp, sphincs.cpp, otp.cpp, key_derivation.cpp"
+    },
+    {
+      "id": "privacy_mode",
+      "title": "Privacy Mode — Tor Integration, Stealth Addresses, Amnesia",
+      "keywords": [
+        "privacy mode", "privacy", "amnesia", "amnesia mode", "stealth address", "dandelion",
+        "dandelion++", "decoy traffic", "hidden volume", "plausible deniability", "onion service",
+        "rotating onion", "tor integration", "privacy flag", "privacy stealth", "no logs",
+        "ip not logged", "anonymity", "deanonymize", "global adversary", "traffic analysis",
+        "mix network", "session crypto", "traffic correlation", "behavior correlation",
+        "privacy levels", "casual privacy", "medium privacy", "high privacy", "paranoid"
+      ],
+      "content": "SynapseNet implements multiple privacy modes with increasing protection levels.\n\nPRIVACY MODES:\n- $ synapsed: Normal mode (no privacy)\n- $ synapsed --privacy: Tor + E2E + scrubbed logs\n- $ synapsed --privacy --stealth: + stealth addresses + Dandelion++\n- $ synapsed --amnesia: RAM-only, zero traces on disk\n- $ synapsed --hidden-wallet: Plausible deniability storage\n\nPRIVACY FEATURES:\n1. LOCAL AI: Queries do NOT go to internet — no one sees what you ask\n2. TOR INTEGRATION: All traffic through Tor by default, rotating .onion identity, IP hidden\n3. STEALTH ADDRESSES: Every transaction = new address (very difficult to link payments)\n4. AMNESIA MODE: RAM-only storage, nothing to disk, secure memory wipe on exit, zero traces\n5. NO LOGS: IPs not logged, node IDs truncated, timestamps rounded\n\nDANDELION++ PARAMETERS:\n- <50 nodes: 8-12 hops, 10% probability of fluff (mostly stem)\n- 50-500 nodes: 4-8 hops, 25% probability of fluff\n- >500 nodes: 2-4 hops, 40% probability of fluff (standard Dandelion++)\nAdaptation: Minimum 10 hops in networks with <100 nodes.\n\nTIMING DEFENSE:\n- Collect queries for 5-30 seconds, shuffle before forwarding, random padding to equalize\n- Random latency 50-500ms added to model responses\n- Decoy traffic: fake transactions, random online/offline simulation, cover traffic when idle\n\nTHREE CRITICAL CONDITIONS FOR PRIVACY:\n1. NO NETWORK PATH BYPASSES TOR: Bootstrap/seed nodes use .onion seeds only, no DNS in privacy mode, model download via Tor, crash reports DISABLED, --privacy blocks all non-Tor sockets at application level.\n2. NO STABLE IDENTIFIERS: Rotating .onion (new each session), stealth addresses MANDATORY, root pubkey NEVER broadcast, anonymous hosting mode (mix network).\n3. NO TIME/BEHAVIOR CORRELATION: Minimum 10 hops in small networks, batching + delay, response size normalization, decoy traffic.\n\nHONEST PRIVACY LEVELS:\n- --privacy: Casual privacy (ISP can't see activity)\n- --privacy --stealth: Medium (resists basic graph analysis)\n- --amnesia + fresh seed: High (resists targeted investigation)\n- Hardware isolation (VM/Whonix): Paranoid (resists nation-state)\n\nWHAT PRIVACY DOES NOT AFFECT: PoE logic, knowledge scoring, NGT tokenomics, AI model hosting functionality, consensus rules, network protocol.\n\nCode: KeplerSynapseNet/src/privacy/privacy.cpp, onion_service.cpp, socks5_proxy.cpp, dandelion.cpp, decoy_traffic.cpp, stealth_address.cpp, amnesia.cpp"
+    },
+    {
+      "id": "local_ai_hosting",
+      "title": "Local AI Model Hosting — GGUF, Inference, Model Marketplace",
+      "keywords": [
+        "local ai", "local model", "gguf", "llama.cpp", "llama", "model hosting", "inference",
+        "ai model", "model download", "model load", "model unload", "llama 2 7b", "llama 3",
+        "mistral", "phi-2", "phi-3", "codellama", "quantized", "q2_k", "2.6 gb",
+        "model marketplace", "rent model", "paid model", "model rental", "model access",
+        "private model", "shared model", "public model", "model slot", "ngt per hour",
+        "model status", "synced", "downloading", "inference running", "model directory",
+        "models folder", "acl", "access control", "model permissions", "onnx", "safetensors"
+      ],
+      "content": "Every SynapseNet node can run a LOCAL AI model. You own it. You control it. No external API needed.\n\nDEFAULT MODEL:\n- Llama 2 7B Chat (Q2_K, GGUF)\n- File: llama-2-7b-chat.Q2_K.gguf\n- Size: ~2.6 GB (quantized)\n- Download trigger: TUI Model panel → [F4]\n- Storage: ~/.synapsenet/models/ or ./models/\n\nSUPPORTED FORMATS:\n- GGUF (llama.cpp compatible) — CURRENTLY SUPPORTED\n- ONNX — Detected but not loaded yet (planned)\n- SafeTensors — Detected but not loaded yet (planned)\n- PyTorch (.pt/.pth) — Planned\n\nEXAMPLE MODELS:\n- Llama 3.x (7B, 13B, 70B)\n- Mistral 7B\n- Phi-2, Phi-3\n- CodeLlama\n- Your own fine-tuned models\n- Future: Quantum neural networks\n\nACCESS MODES:\n1. PRIVATE (default): Only YOU can use your model. No external access.\n2. SHARED (invite-only): Invite specific nodes, set max connections (e.g., 3 nodes), revoke access anytime.\n3. PUBLIC: Anyone on network can use. Set rate limits. Earn NGT for compute sharing.\n4. PAID (marketplace): Set YOUR price in NGT per request/hour/slot. Limit slots (e.g., 3 paying users max). Users pay you directly.\n\nEXAMPLE EARNINGS (Paid mode):\n- RTX 4090 (24GB) with Llama 70B → 5 NGT/hr → ~120 NGT/day\n- A100 (80GB) with Llama 405B → 15 NGT/hr → ~360 NGT/day\n- 3 users × 5 NGT × 24 hours = 360 NGT/day passive income\n\nMODEL STATUS STATES:\n- SYNCED: Model loaded, ready for inference\n- DOWNLOADING: Downloading model (shows progress bar)\n- INFERENCE: Currently running inference request\n- OFFLINE: Model not loaded\n- ERROR: Load/inference failed\n\nACCESS LIST (ACL) COLORS:\n- GREEN: Active access, currently connected or allowed\n- YELLOW: Invited, pending acceptance\n- RED: Banned/blocked, no access\n- GRAY: Kicked, access revoked (can be re-invited)\n\nPERMISSIONS: INVITE node, KICK node, BAN node, UNBAN, SET LIMIT (max concurrent users), SET RATE (requests per minute), SET PRICE (in NGT), CLOSE/OPEN ACCESS.\n\nSynapseIDE default coding model: deepseek-coder-6.7b-instruct.Q4_K_M.gguf\n\nCode: KeplerSynapseNet/src/model/model_loader.cpp, model_inference.cpp, model_access.cpp, model_marketplace.cpp, model_download.cpp"
+    },
+    {
+      "id": "web4_concept",
+      "title": "Web 4.0 — Symbiosis of Human and AI",
+      "keywords": [
+        "web4", "web 4.0", "web4.0", "digital cortex", "external cortex", "cognition extension",
+        "web evolution", "web1", "web2", "web3", "read write own think", "local agent",
+        "clearnet onion synthesis", "synthesis", "inference currency", "knowledge currency",
+        "ai assistant", "search alternative", "ai search", "context injection", "web injection",
+        "clearnet injection", "onion injection", "ai wrapper", "decentralized intelligence"
+      ],
+      "content": "SynapseNet defines the next evolution of the web as 'Web 4.0'.\n\nWEB EVOLUTION:\n- Web 1.0: Read only — consume published content\n- Web 2.0: Read-Write — we 'Google' and manually assemble meaning; obsession with search\n- Web 3.0: Read-Write-Own — DeFi became the center, obsession with finance\n- Web 4.0 (SynapseNet): Read-Write-Own-Think — you talk to a local agent (a model you own, running on your hardware); the agent can optionally fetch context from clearnet and onion sources, cross-check it, extract signal, and return a synthesized answer with citations.\n\nWeb 4.0 IS NOT 'search'. It is a DIGITAL CORTEX: an extension of cognition that lives on your machine, not on someone else's API.\n\nIn Web 4.0, the primary currencies are:\n- Inference (compute you can provide or rent)\n- Useful knowledge (Proof of Emergence)\n\nYour node doesn't just store data — it runs a local AI that reasons over a decentralized knowledge network, contributes back, and earns for it. No cloud API, no corporate middleman. The intelligence runs on your machine, talks to the network over P2P (optionally through Tor), and the knowledge chain grows like a blockchain but stores intelligence instead of transactions.\n\nWEB4 AI INJECTION FLOW:\n1. User prompt → RPC ai.complete\n2. If Web4 enabled → WebSearch (Tor/Clearnet/Onion)\n3. AIWrapper injects search results as context into prompt\n4. Local GGUF model generates enriched answer\n\nTUI CONTROLS:\n- 5 / H+W / Ctrl+W: Enable/disable web context injection\n- 6 / H+O / Ctrl+O: Include onion sources in searches\n- 7 / H+T / Ctrl+T: Route clearnet requests through Tor\n- 8 / H+I: Tor install/managed runtime helpers"
+    },
+    {
+      "id": "architecture_overview",
+      "title": "Architecture Overview — Components, Runtime, and Repository Layout",
+      "keywords": [
+        "architecture", "synapsed", "synapseide", "c++", "go", "cmake", "repository", "layout",
+        "components", "runtime", "initialization order", "subsystem", "rpc", "json-rpc",
+        "node orchestration", "p2p dispatch", "main.cpp", "network module", "core module",
+        "model module", "web module", "tui module", "crypto module", "privacy module",
+        "quantum module", "database", "sqlite", "infrastructure", "messages", "protocol"
+      ],
+      "content": "SynapseNet ships two main binaries:\n\n1. synapsed — The core node process (C++ daemon)\nHandles: P2P networking, PoE v1 consensus, NGT ledger, local LLM inference, optional Web4 search with Tor routing.\nEntry point: KeplerSynapseNet/src/main.cpp\n\n2. synapseide — Terminal IDE client (Go-based, being replaced in V4)\nTalks to synapsed over JSON-RPC. Features: isolated threads (/tangent), unified diff patch mode (/patch), remote model rentals.\nLocation: KeplerSynapseNet/crush-main (Go)\n\nREPOSITORY LAYOUT:\nKeplerSynapseNet/\n  include/          Public headers\n  src/              C++ implementation\n    main.cpp        Node orchestration, RPC, P2P dispatch\n    network/        Socket layer + peer discovery + sync\n    infrastructure/ Wire messages and serialization\n    core/           Ledger, Transfer, Knowledge, PoE v1, Consensus, NAAN agent\n    model/          Model loading / inference / marketplace\n    web/            Optional Web4 search + Tor + injection\n    tui/            ncurses UI\n    crypto/         Ed25519, SHA-256, address generation\n    quantum/        PQC, OTP, QKD primitives\n    privacy/        Tor routing, onion service, dandelion\n    database/       SQLite wrapper\n    python/         Python bridge and sandbox\n    utils/          Config, logging, serialization\n  tests/            C++ tests (ctest, 230+ tests passing)\n  crush-main/       SynapseIDE (Go) — being migrated to C++ in V4\n\nRUNTIME INITIALIZATION ORDER:\n1. Config + Logger\n2. Database + Keys/Crypto\n3. Quantum Security (optional)\n4. P2P Network + Discovery (unless CLI-only)\n5. Core: Ledger, Knowledge, Transfer, Consensus, PoE v1\n6. Model: local LLM loader + access + marketplace (if needed)\n7. Agent: NAAN runtime\n8. Privacy layer (unless CLI-only)\n9. RPC server (unless CLI-only)\n10. Mempool config (unless CLI-only)\n\nRPC SURFACE (JSON-RPC over HTTP, default port 8332):\nai.* (complete, stop) | model.* (list, load, unload, status, marketplace, remote)\nwallet.* (address, balance) | poe.* (submit, vote, finalize, epoch, validators, submit_code)\nnode.* (status, peers, logs, seeds, discovery.stats) | naan.* (status, observatory, pipeline)\nupdate.manifest.* | update.install.* | implant.update.*\n\nDATA DIRECTORY (~/.synapsenet by default, or --datadir):\nledger/ledger.db, knowledge/knowledge.db, transfer/transfer.db, poe/poe.db, models/, synapsenet.conf, synapsenet.log, naan/ (runtime state)\n\nBUILD STATS (alphaV3 snapshot): 120+ C++ source files, 75+ C++ header files, 130+ Go source files (being removed in V4), 267+ tests passing, 610 build targets."
+    },
+    {
+      "id": "architecture_verified",
+      "title": "Architecture Verified — Repository Structure and File Map",
+      "keywords": [
+        "verified architecture", "repository structure", "file map", "source files", "headers",
+        "tests", "tools", "docs", "runbooks", "ci", "github actions", "cmake", "build",
+        "docker", "dockerfile", "interface txt", "mirror policy", "check interface mirrors"
+      ],
+      "content": "The verified architecture snapshot of SynapseNet (March 1, 2026) confirms the following structure:\n\nTOP-LEVEL LAYOUT (Synapsenet-main/):\n- README.md, CONTRIBUTING.md, LICENSE, .gitignore, .clangd\n- .github/ (CI workflows), .qodo/, .vscode/\n- ide/ (synapsenet-vscode VS Code extension)\n- interfaces txt/ (all architecture and spec documents)\n- pictures/ (screenshots and diagrams)\n- KeplerSynapseNet/ (main C++ codebase)\n\nINTERFACE DOCS (interfaces txt/):\n- WHAT_IS_SYNAPSENET.txt, PROJECT_ARCHITECTURE_SCHEMA.txt, POE_V1_DETERMINISTIC_DESIGN.txt\n- DARKNET_INTEGRATION_SUMMARY.txt, NODE_ATTACHED_AGENT_NETWORK.txt\n- NEUROCHIP_STACK_FOR_SYNAPSENET.txt (redirect to IMPLANT_AI_STACK)\n- IMPLANT_AI_STACK_FOR_SYNAPSENET.txt, NAAN_TOR_BRIDGE_AUTOMATION_CROSS_PLATFORM_TODO.txt\n- NAAN_TOR_BRIDGE_SETUP_STATUS_AND_SUPPORTED_MODES.txt, V0_2_IMPLEMENTATION_STATUS.txt\n- V0_2_RUNTIME_UPDATE_IMPLANT_SPEC.txt, V0_2_ATTACHED_AGENT_PRIMARY_UI_SPEC.txt\n- PROOF_OF_EMERGENCE_FORMAL_SUPPLEMENT_v1.txt, main_interface.txt, AI.txt\n\nKEPLERSYNAPSENET CORE HEADERS (include/):\ncore/: consensus.h, poe_v1.h, poe_v1_engine.h, poe_v1_objects.h, ledger.h, wallet.h, transfer.h, knowledge.h, agent_runtime.h, agent_scheduler.h, agent_coordination.h, agent_score.h, agent_storage.h, agent_draft_queue.h, agent_submission_pipeline.h, implant_compatibility.h, update_bundle.h, update_installer.h, tor_bridge_provider.h, tor_route_policy.h\ncrypto/: crypto.h, keys.h, address.h\nquantum/: quantum_security.h, pqc_manager.h, network_security.h, knowledge_crypto.h\nnetwork/: network.h, discovery.h, scale_policy.h\nprivacy/: privacy.h\nmodel/: model_inference.h, model_loader.h, model_access.h\n\nDATABASE FILES (per node):\nchain.db (block chain), ledger.db (NGT ledger), knowledge.db (knowledge entries),\ntransfer.db (NGT transfers), consensus.db (consensus state), poe.db (PoE epochs and votes)\n\nTOOLS: download_model.py, golden_path_e2e.sh, verify_tor_naan_e2e.sh, cross-platform Tor validation scripts\n\nMIRROR POLICY: Two identical copies of interface docs at:\n- Synapsenet-main/interfaces txt/ (canonical)\n- Synapsenet-main/KeplerSynapseNet/interfaces txt/ (mirror)\nVerify with: bash KeplerSynapseNet/tools/check_interface_mirrors.sh"
+    },
+    {
+      "id": "v02_implementation_status",
+      "title": "v0.2 Implementation Status",
+      "keywords": [
+        "v0.2", "implementation status", "implemented", "shipped", "what works", "current status",
+        "february 2026", "230 tests", "test suite", "green", "what is done", "release status",
+        "v0.2 features", "mainnet readiness", "release gates", "quantum status", "open items"
+      ],
+      "content": "SynapseNet v0.2 Core Implementation Status (Snapshot: February 23, 2026)\n\nIMPLEMENTED BASELINE:\n- Node-attached autonomous agent runtime (NAAN) with deterministic scheduler, budgets, and score bands\n- Always-on research connectors with Tor-first defaults, deterministic route policy, and extraction risk gates\n- Deterministic draft queue and submission pipeline (review gates, duplicate gates, citation sanity, bounded batch drains)\n- Deterministic reward visibility for NAAN submissions (expected reward atoms + credited-state observability)\n- Hash-chained NAAN audit log and startup recovery routines for runtime artifacts\n- Structured security events with policy hashes and secret redaction markers\n- Update/implant governance primitives with detached signer approvals and threshold checks\n- TUI and RPC observability for attached agent state and read-only observatory feeds\n- Remote-model routing hardening: fail-closed behavior in Tor-required mode\n- Network scale hardening: adaptive admission controls, deterministic eviction order, per-IP/per-subnet quotas, overload entry/exit thresholds\n- DoS controls: per-peer token buckets, malformed payload penalties, decay-based temporary bans\n- Bootstrap seed health rotation with deterministic quarantine/recovery\n- Bounded high-fanout protection: deterministic inventory subset routing, PoE vote dedup windows\n\nVERIFIED LOCALLY (February 23, 2026):\n- cmake --build KeplerSynapseNet/build --parallel 6 → SUCCESS\n- ctest --test-dir KeplerSynapseNet/build --output-on-failure → 230/230 tests passed\n\nOPEN RELEASE-LEVEL ITEMS:\n- Cross-platform determinism replay validation in release workflows\n- Security/reproducibility gate completion validation in CI\n- 1k/5k/10k stress coverage is currently synthetic (simulation); long-run fd/memory soak under real sockets is a follow-up gate\n\nQUANTUM SECURITY STATUS:\n- Startup logs and node.status report whether PQC is running as: development_simulation, compiled_real_backend_unavailable, mixed_real_and_simulated, or real_pqc\n- liboqs integration path: SYNAPSE_FETCH_LIBOQS, SYNAPSE_REQUIRE_REAL_PQC CMake controls\n- Kyber, Dilithium, SPHINCS+ all have real liboqs paths behind #ifdef USE_LIBOQS\n- CI: dedicated 'PQC Real Backend (liboqs)' job in .github/workflows/ci.yml"
+    },
+    {
+      "id": "synapsenet_tui",
+      "title": "TUI (Terminal User Interface) — Screens and Key Bindings",
+      "keywords": [
+        "tui", "terminal", "ncurses", "user interface", "key bindings", "dashboard", "screens",
+        "ai query", "ai mining", "wallet screen", "network screen", "mining screen", "model panel",
+        "knowledge screen", "settings screen", "help screen", "f4", "f5", "f6", "f7",
+        "download model", "web injection", "onion sources", "tor clearnet", "clear chat",
+        "stop generation", "input history", "autoscroll", "pgup", "pgdn", "space continue",
+        "ctrl+a", "ctrl+e", "ctrl+k", "ctrl+u", "terminal ide launch", "observatory"
+      ],
+      "content": "SynapseNet includes a full ncurses Terminal User Interface (TUI).\n\nLAUNCH COMMAND: TERM=xterm-256color ./KeplerSynapseNet/build/synapsed\n\nMAIN DASHBOARD (v0.2 layout):\n- [A] AI Mining (NAAN) — primary\n- [3] AI Query (Chat) — kept on main dashboard\n- [Q] Quit\n\nAI MINING (NAAN) SUBPAGES (letter keys):\n1. Overview: lifecycle state, score, penalty, crash count, scheduler decisions, budgets\n2. Network & Mining: P2P status, Tor transport mode, peer discovery, ledger, hashing status\n3. Wallet & Earnings: address, balance, pending rewards, transfer history (read-only)\n4. Contributions Pipeline: Fetch → Review → Draft → Submit → Finalize/Epoch reward pipeline\n5. Security & Policy: policy mode, secret redaction counters, connector allow/deny summary\n6. Logs & Diagnostics: ring buffer of agent events, timeline, Tor runtime events\n7. Agent Network Observatory: artifact feed pagination, artifact lookup, signed metadata\n8. IDE / Code Contributions: local IDE/RPC readiness, code submission status\n9. Storage & Recovery: on-disk paths, recovery status, last integrity check\n\nKEY BINDINGS:\n- Space: Continue boot sequence\n- 1-9: Dashboard shortcuts\n- 0: Agent Network observatory\n- A: Attached Agent status\n- Tab / H+P / Ctrl+P / F2: Model panel\n- 4 / H+D / Ctrl+D / F4: Download model\n- 5 / H+W / Ctrl+W / F5: Toggle web injection\n- 6 / H+O / Ctrl+O / F6: Toggle onion sources\n- 7 / H+T / Ctrl+T / F7: Toggle Tor for clearnet\n- 8 / H+I: Tor install/managed runtime helpers\n- I: Launch Terminal IDE (from code screen)\n- PgUp/PgDn: Scroll chat\n- F3 / H+C: Clear chat\n- F8 / H+X / X: Stop generation\n- Enter: Confirm/send\n- Esc: Back\n- Ctrl+A/E/B/F/K/U/L: Input editor shortcuts (home/end/back/forward/kill-to-end/kill-to-start/clear)\n- Up/Down arrows: Input history in AI chat\n- Settings shortcuts: [T] Tor Bridges (paste obfs4), [W] NAAN Site Allowlist"
+    },
+    {
+      "id": "synapsenet_rpc",
+      "title": "RPC Interface — JSON-RPC Methods",
+      "keywords": [
+        "rpc", "json-rpc", "api", "http", "8332", "rpc methods", "ai.complete", "ai.stop",
+        "model.list", "model.load", "model.unload", "wallet.address", "wallet.balance",
+        "poe.submit", "poe.vote", "poe.finalize", "poe.epoch", "poe.validators",
+        "node.status", "node.peers", "node.logs", "node.seeds", "naan.status",
+        "naan.observatory", "naan.pipeline", "update.manifest", "update.install",
+        "implant.update", "market.listings", "model.remote.rent", "rpc server",
+        "synapsed rpc", "local rpc", "json-rpc http"
+      ],
+      "content": "SynapseNet exposes a JSON-RPC over HTTP interface on port 8332 (default). Used by CLI mode, SynapseIDE, VS Code extension, and external tools.\n\nCOMPLETE RPC METHOD LIST:\n\nAI methods:\n- ai.complete — Generate AI response (supports web injection: webInject, webOnion, webTor, webQuery)\n- ai.stop — Stop current generation\n\nModel methods:\n- model.list, model.load, model.unload, model.status\n- model.access.get, model.access.set (PRIVATE/SHARED/PUBLIC/PAID modes)\n- model.remote.list, model.remote.rent, model.remote.end\n\nWallet methods:\n- wallet.address, wallet.balance\n\nPoE methods:\n- poe.submit, poe.vote, poe.finalize, poe.epoch, poe.validators\n- poe.submit_code, poe.list_code, poe.fetch_code\n- poe.export, poe.import\n\nNode methods:\n- node.status — Full node status (peers, Tor, quantum, NAAN, network health)\n- node.peers, node.logs, node.seeds, node.discovery.stats\n- node.tor.control — Tor runtime control (refresh_bridges, switch_mode, restart_managed_tor)\n\nNAAN methods:\n- naan.status — NAAN agent status (scheduler, connectors, rewards, Tor)\n- naan.observatory.artifacts, naan.observatory.artifact.get\n- naan.observatory.drafts, naan.observatory.draft.get\n- naan.pipeline.dryrun, naan.pipeline.drain\n\nMarket methods:\n- market.listings, market.stats\n\nUpdate methods:\n- update.manifest.submit, update.manifest.fetch, update.manifest.list, update.manifest.approve, update.manifest.approvals\n- update.install.state, update.install.prepare, update.install.advance, update.install.commit, update.install.rollback\n\nImplant methods:\n- implant.update.state, implant.update.prepare, implant.update.advance, implant.update.commit, implant.update.rollback\n\nCLI USAGE (when synapsed daemon is running): synapsed node.status, synapsed poe help, synapsed model help, synapsed poe pubkey, synapsed poe validators"
+    },
+    {
+      "id": "quality_score_system",
+      "title": "Quality Score System",
+      "keywords": [
+        "quality score", "quality multiplier", "validator score", "score 1-100", "knowledge quality",
+        "content quality", "good knowledge", "bad knowledge", "reputation", "node reputation",
+        "quality system", "reward multiplier", "contribution quality", "network rank",
+        "94.7%", "validator rating", "submission score"
+      ],
+      "content": "SynapseNet uses a Quality Score system to ensure the knowledge network maintains high standards.\n\nQUALITY SCORE MECHANICS:\n- If a submission is ACCEPTED: Quality Score = average of validator scores (1-100)\n- Reward calculation: reward = base_reward * quality_score * (1 / (1 + network_load))\n- where quality_score = average score assigned by accepting validators\n- network_load = submissions_per_hour / baseline\n\nQUALITY FACTORS validators assess:\n- Accuracy and factual correctness\n- Novelty vs. existing knowledge (SimHash novelty score)\n- Citation quality and verifiability\n- Completeness and usefulness\n- Format compliance\n\nIMPACT ON REWARDS:\n- High quality score → multiplied reward (quality_score / 100 × base_rate)\n- Low quality but accepted → minimal reward\n- Rejected → stake lost (10 NGT), no reward\n\nLONG-TERM REWARDS (Emergence):\n- Entries that get cited by other entries accumulate 'emergence score'\n- At epoch boundaries, PageRank-style citation graph computation determines additional epoch rewards\n- Anti-gaming: cap self-citations per author, ignore tight citation loops, cap outgoing citations per entry\n\nNODE REPUTATION:\n- Validators who consistently approve good content earn reputation\n- Validators who approve spam or reject good content lose reputation\n- Reputation affects probability of being selected as validator\n- High reputation = higher validation limits\n- New addresses start with low reputation\n\nINTERFACE DISPLAY:\n- Node dashboard shows Quality Score: 94.7% (example from design targets)\n- Network Rank: #1,247 (example)\n- TUI shows contribution stats in real-time"
+    },
+    {
+      "id": "anti_spam_mechanisms",
+      "title": "Anti-Spam Mechanisms — Rate Limiting and Defense Layers",
+      "keywords": [
+        "anti-spam", "spam protection", "rate limiting", "rate limits", "max submissions",
+        "spam prevention", "pow gate", "hashcash", "stake anti-spam", "10 messages per second",
+        "100 connections per ip", "5 submissions per hour", "50 validations per hour",
+        "cooldown", "1 hour cooldown", "blacklist", "banned", "community service",
+        "forced validation", "spam penalty", "spam submission", "llm spam", "ai spam"
+      ],
+      "content": "SynapseNet implements four layers of anti-spam protection:\n\nLAYER 1: NETWORK LEVEL\n- Max 10 messages/second per IP\n- Max 100 connections per IP\n- Blacklist for repeated violations\n\nLAYER 2: PROTOCOL LEVEL\n- Max 5 submissions/hour per address (v0.1)\n- Max 50 validations/hour per validator\n- Cooldown after rejection (1 hour wait)\n\nLAYER 3: ECONOMIC LEVEL\n- Stake required for submission: 10 NGT (lost if rejected as spam)\n- Stake required for validation: 100 NGT minimum\n- Spam = lose stake (expensive to attack)\n\nLAYER 4: REPUTATION LEVEL\n- New addresses start with low reputation\n- High reputation = higher limits\n- Bad behavior = reputation decay\n\nCOMMUNITY SERVICE PENALTY:\nBad actors who submit consistently low-quality content are assigned 'community service' — forced to do free validation work for 50 contributions without earning NGT. During community service:\n- Your NGT balance stays UNTOUCHED (never confiscated)\n- You CANNOT EARN new NGT until 50 community service contributions are done\n- You CAN still transfer your existing NGT\n\nSPECIFIC PENALTIES:\n- Spam submission: lose stake (10 NGT)\n- Dishonest validator: lose reputation + stake slash\n- Consistent bad actors: banned from validation\n\nPOW ANTI-SPAM GUARANTEE (mathematical):\n- Expected work per submission = 2^D (where D = difficulty bits)\n- Spamming N submissions costs expected work of N × 2^D\n- This makes mass spam economically prohibitive\n\nNAAN AGENT ANTI-SPAM:\n- Citation sanity checks: cap citations per entry, detect circular citation clusters\n- Review diversity: randomized reviewer selection, adversarial prompts\n- Quarantine: new/low-score agents go to local-only draft queue first\n- Graph anomaly detection: detect tight citation rings, sudden topic floods"
+    },
+    {
+      "id": "validator_selection",
+      "title": "Validator Selection — Deterministic Random Selection and Stake",
+      "keywords": [
+        "validator", "validator selection", "validator set", "random selection", "stake-based",
+        "deterministic selection", "prf", "prevblockhash", "entry id", "5 validators",
+        "m-of-n", "3 of 5", "validator stake", "100 ngt stake", "validator reputation",
+        "honest validator", "malicious validator", "sybil validator", "collusion", "51%",
+        "validator mode", "stake mode", "identity records", "eligibility", "auto-finalize"
+      ],
+      "content": "Validator selection in SynapseNet is deterministic and pseudorandom, preventing gaming or manipulation.\n\nSELECTION ALGORITHM:\nvalidators = PRF(prevBlockHash, entryId) → choose N validators\n\nWhere PRF is a pseudorandom function seeded by the previous block hash (changing every block, unpredictable) and the entry's unique ID. This means:\n- Selection is deterministic given same inputs (all nodes agree on the same set)\n- Selection is unpredictable before the block hash is known\n- Cannot bribe or collude ahead of time\n\nCURRENT DEFAULT: 5 validators per entry (M=3, N=5: 3-of-5 required to finalize)\n\nELIGIBILITY REQUIREMENTS:\n- Minimum stake: 100 NGT per validator\n- Active reputation score\n- Stake-based validator mode: validatorMode=stake with validatorMinStakeAtoms threshold\n- Identity/stake records persisted and deterministically resolved before selection\n\nVOTE FORMAT:\n- entryId, validatorId, prevBlockHash\n- flags: malformed, duplicate, bad_citations, spam\n- scores: bounded integers (1-100)\n- Ed25519 signature\n\nCAPTURE PROBABILITY ANALYSIS:\n- Let fraction f of reviewer population be adversarial, N reviewers selected uniformly\n- P[K = k] = C(fP, k) × C((1-f)P, N-k) / C(P, N) (hypergeometric distribution)\n- P[K >= M] = adversarial control probability\n- Increasing N and choosing M close to N decreases P[K >= M] sharply\n- Unless f is already close to 1 (>50% adversarial)\n\nDEV MODE: --dev flag enables faster parameters:\n- Low PoW target, fewer validators, small epochs\n- Multi-node dev requires shared validator set: --poe-validators list (comma-separated pubkey hex)\n- 'self' token adds this node's pubkey\n- Helper: synapsed poe pubkey (prints your full pubkey hex)\n\nCode: KeplerSynapseNet/src/core/poe_v1_engine.cpp (validatorMode=stake implementation)"
+    },
+    {
+      "id": "ngt_wallet_utxo",
+      "title": "NGT Wallet — UTXO Model and Transactions",
+      "keywords": [
+        "wallet", "ngt wallet", "utxo", "unspent transaction output", "transaction", "balance",
+        "send ngt", "receive ngt", "wallet address", "syn1q", "wallet creation", "24 word seed",
+        "bip39", "seed phrase", "mnemonic", "wallet.dat", "ed25519 keys", "wallet recovery",
+        "import wallet", "export wallet", "wallet file", "fee", "mempool", "transaction fee",
+        "atoms", "ngt atoms", "1 ngt = 100000000 atoms", "utxo set", "double spend prevention",
+        "signed transaction", "total supply", "reorg"
+      ],
+      "content": "SynapseNet uses a UTXO (Unspent Transaction Output) model for NGT token management, similar to Bitcoin.\n\nWALLET CREATION:\n- Generates Ed25519 + post-quantum keys locally\n- Displays 24-word BIP39 seed phrase once for backup\n- Wallet file stored at: ~/.synapsenet/wallet.dat\n- Address format: syn1q... (example: syn1qx7f8c9d2e4a6b3f5g7h9j2k4l6m8n0p1r3s5t7v9w1y3z5a7b9c1d3f5a3d2)\n- Optional password lock on wallet file\n\nRESTORE: Paste 24-word seed phrase, app regenerates keys deterministically.\n\nUTXO MODEL INVARIANTS:\nFor any valid transaction tx:\n  sum(inputs_amounts) >= sum(outputs_amounts) + fee\nWhere fee = network fee (integer atoms)\n\nTOTAL SUPPLY FORMULA:\n  total_supply_next = total_supply_prev + minted_rewards - burned_amounts\n\nMinted rewards are tied to:\n- PoE acceptance rewards\n- PoE epoch rewards\n- Other protocol-defined mint events\n\nATOMIC UNITS:\n1 NGT = 100,000,000 atoms (canonical atomic unit type: uint64_t AmountAtoms)\n\nTRANSACTION LIFECYCLE:\n1. create_tx → 2. sign_tx → 3. submit_to_mempool → 4. inv/getdata_tx → 5. block_import/mine → 6. apply_utxo_changes\n\nMEMPOOL POLICY: expiry, size cap, min fee checks, deterministic eviction rules\n\nSIGNATURE VERIFICATION (code):\nbool Transaction::verify() const {\n    for (const auto& inp : inputs) {\n        crypto::Hash256 sigHash = computeHash();\n        if (!crypto::verify(sigHash, inp.signature, inp.pubKey)) return false;\n    }\n    return true;\n}\n\nRPC: wallet.address, wallet.balance\nCLI: synapsed wallet address, synapsed wallet balance, synapsed wallet send\n\nCode: KeplerSynapseNet/src/core/transfer.cpp, wallet.cpp, database/wallet_db.cpp"
+    },
+    {
+      "id": "synapsenet_ide",
+      "title": "SynapseIDE — Terminal IDE and VS Code Extension",
+      "keywords": [
+        "synapseide", "ide", "coding", "code contributions", "vs code", "vscode extension",
+        "github quests", "quest", "code submission", "poe code", "content type code",
+        "patch mode", "unified diff", "patch diff", "apply patch", "suggest patch",
+        "tangent threads", "isolated threads", "remote model rental", "inline completion",
+        "ghost text", "code contributions ngt", "coding earn ngt", "synapsed rpc ide",
+        "bubbletea", "terminal ide", "crush-main", "deepseek coder", "lsp", "mcp"
+      ],
+      "content": "SynapseNet includes two IDE surfaces: a terminal IDE (synapseide) and a VS Code extension.\n\nTERMINAL IDE (synapseide, built from KeplerSynapseNet/crush-main in Go):\n- Local-only provider (synapsenet) talks to synapsed RPC (ai.complete + model.*)\n- Default coding model: deepseek-coder-6.7b-instruct.Q4_K_M.gguf\n- Launch from TUI: Dashboard [9] → Code screen → [I] Launch IDE\n- Isolated threads: /tangent <title> opens child thread, /up returns to parent\n- Patch mode: /patch <instruction> requests unified diff, opens Apply Patch dialog (preview/apply/skip/submit, supports multi-file)\n- Remote rentals (opt-in): Commands → Remote Rentals (rent/disable)\n- Session persistence: saved to SQLite, survives restart\n\nVS CODE EXTENSION (ide/synapsenet-vscode):\n- Commands: SynapseNet: Open Chat (Web4 injection optional: clearnet/onion/Tor)\n- Inline AI ghost text completions (ai.complete)\n- Suggest Patch: unified diff preview/apply (VS Code editor)\n- Submit Code: submit patch as PoE CODE entry, earn NGT after finalize\n- Model management: load/unload/status/list via RPC\n- Remote model sessions: rent, end sessions, optional default use\n\nGITHUB QUESTS (both terminal synapseide and VS Code):\n- Quest Configure: set repo/token/min PoW bits\n- Quest Select Active Issue: browse open issues\n- Active Quest Visibility: Q#123 indicator in header/status bar\n- Checkout Branch: checkout quest branch in current repo\n- Fork Repo: fork workflow\n- Commit Helper: git commit\n- Create PR: attach PoE CODE submitId to PR\n- Anti-abuse: local rate limits, submitId PoW gate, duplicate quest detection\n- Verifier script: ide/synapsenet-vscode/scripts/verify_quest_flow.sh\n\nPOE CODE CONTRIBUTIONS:\n- ContentType: CODE (stored as KnowledgeEntryV1 with ContentType::CODE)\n- Body: patch/diff in unified diff format\n- canonicalization: canonicalizeCode (removes CR, keeps bytes, preserves case)\n- Title: up to 512 bytes; Body: up to 65,536 bytes\n- RPC: poe.submit_code, poe.list_code, poe.fetch_code\n- CLI: synapsed poe submit-code / list-code / fetch-code\n- Reward flow: acceptance reward on finalize + emergence reward via citations at epoch\n\nDE-TERMINISTIC REWARD DISPLAY:\n'PoE code finalized ... +X.XXXXXXXX NGT' shown in IDE chat after finalization poll.\n\nCode: KeplerSynapseNet/crush-main/ (Go), ide/synapsenet-vscode/"
+    },
+    {
+      "id": "implant_ai_stack",
+      "title": "Implant AI Stack and Neurochip Integration (Future Design)",
+      "keywords": [
+        "implant", "neurochip", "bci", "brain computer interface", "neural interface", "implant ai",
+        "neuralink", "utah array", "ecog", "stentrode", "local hub", "hub", "phone hub",
+        "raw signals", "neural signals", "intents", "hal v1", "intent schema v1",
+        "permission model", "data export policy", "implant stack", "neuro apps",
+        "driver distribution", "signed bundles", "rollback", "3-layer model",
+        "implant modalities", "1024 electrodes", "307 mb/s bandwidth", "data categories"
+      ],
+      "content": "SynapseNet is designed to be compatible with future consumer implant-AI stacks (brain-computer interfaces). This is a design draft with implemented v0.2 runtime baseline.\n\nTHREE-LAYER MODEL:\n1. IMPLANT (cheap standardized implant module):\n- Sensing + digitization + compression\n- Minimal on-chip processing\n- Ultra-low-power wireless link to local hub\n- Multiple vendors, one interoperable protocol\n- Strong hardware identity + attestation (optional, later)\n- Analogy: a smartphone camera sensor — capture + encode, not 'meaning'\n\n2. LOCAL HUB (phone/wearable/dedicated device):\n- Real-time decoding of raw neural signals into high-level intents (cursor move, text entry, app command, motor intent)\n- Personalization: the user's 'brain map' lives here (local-only)\n- Caching + offline operation (basic control works without network)\n- Encryption + policy enforcement before any network interaction\n- Raw signals NEVER leave the hub by default\n- Analogy: the mobile OS — device drivers + personalization + permissions\n\n3. SYNAPSENET NETWORK PLANE:\n- Distribute open-source neuro 'apps' (drivers, decoders, UI modules)\n- Distribute signed model artifacts\n- Host knowledge base of protocols, calibration methods, safety guides\n- Coordinate research tasks via NAAN\n- ML model training is NOT deterministic → must not be consensus\n\nBANDWIDTH MODEL:\nbandwidth_bits_per_sec = channels × sample_rate_hz × bits_per_sample\nExample: 1024 channels × 30,000 Hz × 10 bits ≈ 307,200,000 bits/s (raw)\nThis is why the Local Hub is mandatory — it performs personalization and decoding close to the sensor.\n\nIMPLANT MODALITIES (2026 examples, not endorsements):\n- Utah Electrode Array: up to 96 electrodes per array; multi-array systems up to 1,024 electrodes\n- Thread-based high-channel arrays: 3,072 electrodes on 96 threads\n- High-density microelectrode arrays: 421 microelectrodes in 2 mm × 2 mm area\n- Cortical surface arrays (ECoG/micro-ECoG): 1,024-electrode designs\n- Endovascular electrode arrays (stentrode): delivered via vasculature\n- Peripheral nerve interfaces: cuff electrodes and microneedle cuffs\n\nDATA EXPORT POLICY (formalized):\n- export(R) = FORBIDDEN by default (raw neural samples)\n- export(F) = ALLOWED only with explicit opt-in and minimization (derived features)\n- export(I) = ALLOWED if user opts in (high-level intents)\n\nV0.2 IMPLEMENTED PRIMITIVES:\n- Content-addressed UpdateManifest with deterministic hashing + signature verification\n- Update installer governance policy (trusted signer allowlist + detached signer threshold)\n- Implant HAL v1 framing validation\n- Intent schema v1 + Permission model v1 (default deny)\n- Safety pipeline gates before implant commit\n\nCode: KeplerSynapseNet/include/core/implant_compatibility.h, implant_safety_pipeline.h, update_bundle.h, update_installer.h"
+    },
+    {
+      "id": "update_governance",
+      "title": "Update Governance — UpdateManifest, UpdateBundle, Rollout",
+      "keywords": [
+        "update", "update manifest", "update bundle", "update governance", "signed manifest",
+        "m-of-n signatures", "maintainer keys", "rollback", "a/b slots", "staged rollout",
+        "canary", "update installer", "update.install", "signer allowlist", "detached signer",
+        "content addressed", "sha256 chunks", "bundle id", "version hash", "reproducible build",
+        "kernel upgrade", "control plane", "software update", "p2p distribution", "update rpc"
+      ],
+      "content": "SynapseNet uses a cryptographically-governed software update system distributed over P2P.\n\nUPDATE MANIFEST STRUCTURE:\nRequired fields: bundle_id, content_hash, chunks[] (hash, size), target, protocol_min, protocol_max, signer, signature\n\nDETERMINISTIC RULES:\n- Chunks canonicalized by (hash, size) ascending\n- content_hash = sha256(canonical_chunks_encoding)\n- bundle_id = sha256(version + content_hash + target + protocol_range + signer + domain_tag)\n- Signature verified over deterministic payload bytes\n\nSTRICT REJECT CONDITIONS:\n- Unsupported version, invalid protocol range, invalid target format\n- Chunk count/size/hash violations, non-canonical chunk order\n- Content hash mismatch, bundle_id mismatch, invalid signature\n\nUPDATE INSTALLER ROLLOUT:\n- Governance: trusted signer allowlist + detached signer threshold\n- State machine: prepare → advance → commit (or rollback)\n- Atomic install + rollback (A/B slot or previous-version pointer)\n- Status fields: policyHashNaan, policyHashImplant, pendingSignerThresholdReady, pendingSignerThresholdReason\n\nKERNEL vs CONTROL-PLANE DISCIPLINE:\n- Kernel upgrades (consensus, PoE rules, signatures, wire formats): stricter signature thresholds, deterministic test vectors, reproducible builds, staged rollout with canaries\n- Control-plane changes: ship faster but bounded by policy limits\n\nNAAN ROLE IN UPDATES:\n- NAAN agents seed and cache UpdateBundles to accelerate propagation\n- Monitor rollout health (crashes, consensus errors) and propose rollback\n- Open PRs, generate tests, and propose patches (but CANNOT self-deploy)\n\nMACHINE-READABLE REJECTION PREFIXES:\n- update_signer_threshold_failed:<reason>\n- implant_policy_rejected:<reason>\n- safety_pipeline_rejected:<reason>\n\nRPC: update.manifest.submit/fetch/list/approve/approvals | update.install.state/prepare/advance/commit/rollback\n\nCode: KeplerSynapseNet/include/core/update_bundle.h, update_installer.h, implant_compatibility.h, implant_safety_pipeline.h"
+    },
+    {
+      "id": "docker_deployment",
+      "title": "Docker Deployment",
+      "keywords": [
+        "docker", "docker build", "docker compose", "container", "dockerfile", "docker.md",
+        "linux binary", "cross-platform build", "wsl2", "windows docker", "multi-arch",
+        "linux/amd64", "linux/arm64", "buildx", "p2p port", "8332", "docker run", "keplersynapsenet"
+      ],
+      "content": "SynapseNet supports Docker deployment, which produces the Linux binary (synapsed) inside a container. This is a reproducible fallback for Windows/macOS/Linux users.\n\nSINGLE-ARCH BUILD:\n  cd KeplerSynapseNet\n  docker build -t keplersynapsenet:local .\n\nMULTI-ARCH BUILD (recommended):\n  cd KeplerSynapseNet\n  docker buildx build --platform linux/amd64,linux/arm64 -t keplersynapsenet:local --load .\n\nRUN:\n  docker run --rm -it -p 8332:8332 keplersynapsenet:local\n\nFor Docker Compose:\n  docker compose up --build\n\nWINDOWS:\n- Use WSL2 for native builds (Linux toolchain) — preferred\n- If WSL2 build fails, use Docker as fallback\n\nDocumentation: KeplerSynapseNet/DOCKER.md\nDockerfile: KeplerSynapseNet/Dockerfile\n\nNOTE: Docker build defaults include poe.allow_self_validator_bootstrap=true for single-node testing.\n\nDefault P2P/RPC port mapping: -p 8332:8332 (RPC)\nP2P port 8333 should also be exposed for peer connections."
+    },
+    {
+      "id": "tauri_desktop_app",
+      "title": "Tauri Desktop App (v0.1.0-alphaV4 Target)",
+      "keywords": [
+        "tauri", "desktop app", "gui", "graphical interface", "svelte", "monaco editor",
+        "frontend", "rust backend", "typescript", "v4", "alphaV4", "kill go",
+        "go migration", "c++ only", "libsynapsed", "ffi", "native app", "cross-platform",
+        "desktop interface", "setup wizard", "wallet setup wizard", "monaco", "ide tab",
+        "dashboard tab", "wallet tab", "transfers tab", "knowledge tab", "naan agent tab",
+        "network tab", "settings tab", "status bar", "auto-updater"
+      ],
+      "content": "Version 0.1.0-alphaV4 replaces the Go terminal IDE entirely with a Tauri desktop application.\n\nWHY KILL GO:\n- Two languages, two build systems (CMake for C++, go build for Go)\n- Duplicated logic between Go agent and C++ daemon\n- Terminal-only (bubbletea TUI cannot compete with Cursor/Zed/Windsurf)\n- No GUI — impossible to ship a desktop app with a Go terminal client\n\nTECH STACK:\n- Frontend: TypeScript + Svelte 4 + Monaco Editor\n- Backend shell: Rust (Tauri 2)\n- Engine: C++ (libsynapsed via FFI)\n- Build: CMake (C++) + Cargo (Rust) + Vite (frontend)\n\nLIBSYNAPSED FFI (C ABI):\n- synapsed_init(config_path): Start the node engine\n- synapsed_shutdown(): Graceful stop\n- synapsed_rpc_call(method, params_json): Direct RPC without TCP\n- synapsed_subscribe(event_type, callback): Push events to frontend\n- synapsed_get_status(): Node status snapshot\n\nSETUP WIZARD (5 steps, no account creation, no email, no cloud):\n1. WALLET: Create New (Ed25519 + PQC keys, 24-word BIP39 seed) or Restore Existing (paste seed)\n2. CONNECTION TYPE: Clearnet (default, direct TCP) / Tor (managed Tor, internal) / Tor + Bridges (paste obfs4 lines)\n3. AI MODEL: Download recommended Llama 3B (~2 GB) / Select local .gguf file / Skip\n4. RESOURCES: CPU threads (half of available), RAM limit (4 GB or 25% whichever lower), disk limit, startup checkbox, mine NGT checkbox\n5. READY: Status checklist (Wallet OK, Connection, AI Model, Peers) → 'Open SynapseNet' button\n\nMAIN WINDOW TABS: Dashboard | Wallet | Transfers | Knowledge | NAAN Agent | IDE | Network | Settings\n\nSTATUS BAR (always visible): Connection indicator (green=Tor, yellow=Clearnet, red=disconnected) | Peer count | NGT balance | NAAN agent status (mining/idle/cooldown/off) | App version\n\nDATA DIRECTORY: ~/.synapsenet/ — portable, copy to another machine and everything works\n\nHEADLESS MODE: Desktop app uses Tauri window; server nodes use synapsed daemon directly (same C++ engine, same P2P network, same RPC interface).\n\nBUILD:\n  cd KeplerSynapseNet\n  cmake .. -DCMAKE_BUILD_TYPE=Release → cmake --build . --target synapsed_lib\n  cd KeplerSynapseNet/tauri-app && npm ci && npm run build\n  cd src-tauri && cargo build --release"
+    },
+    {
+      "id": "contributing_guidelines",
+      "title": "Contributing Guidelines",
+      "keywords": [
+        "contributing", "contribute", "how to contribute", "fork", "pull request", "pr",
+        "branch", "feature branch", "code style", "c++ style", "go fmt", "go vet",
+        "test suite", "run tests", "contributing.md", "open source", "community",
+        "feature request", "bug report", "bug fix", "documentation", "add features",
+        "what can contributors do", "what contributors cannot do"
+      ],
+      "content": "SynapseNet is open for contributions. The CONTRIBUTING.md file defines the guidelines.\n\nCONTRIBUTORS MAY:\n- Add features — New functionality, optimizations, integrations\n- Fix bugs — Bug reports and patches are appreciated\n- Improve documentation — Docs, comments, examples\n- Suggest enhancements — Open issues, discuss design\n- Submit code — Via pull requests\n\nCONTRIBUTORS MUST NOT:\n- Modify — Change PoE logic, tokenomics, or protocol semantics\n- Remove — Strip security checks or validation steps\n- Bypass — Add backdoors or shortcuts around consensus\n- Fork — Propose incompatible protocol changes as 'improvements'\n\nCONTRIBUTION WORKFLOW:\n1. Fork the repository\n2. Create a branch: git checkout -b feature/your-feature\n3. Make changes (ensure compliance with consensus rules)\n4. Test: run existing tests, add new ones if needed\n5. Submit a pull request with a clear description\n\nCODE STYLE:\n- C++: match KeplerSynapseNet conventions\n- Go: standard gofmt, go vet\n- Keep commits focused and well-described\n\nBUILD AND TEST COMMANDS:\n  cmake -S KeplerSynapseNet -B KeplerSynapseNet/build -DCMAKE_BUILD_TYPE=Release -DBUILD_TESTS=ON\n  cmake --build KeplerSynapseNet/build --parallel 8\n  ctest --test-dir KeplerSynapseNet/build --output-on-failure\n\nCODE CONTRIBUTIONS → NGT REWARDS:\n- Submit patches as PoE v1 entries (ContentType::CODE)\n- Earn NGT after epoch finalize\n- Use synapseide or VS Code extension for GitHub Quests workflow\n\nQuestions: Open an issue. For consensus-related questions, refer to interface docs in interfaces txt/."
+    },
+    {
+      "id": "release_history",
+      "title": "Release History",
+      "keywords": [
+        "release history", "versions", "alpha", "alpha v1", "alpha v2", "alpha v3", "alpha v3.5",
+        "alpha v3.6", "alpha v3.7", "alpha v4", "release", "changelog", "version history",
+        "0.1.0-alpha", "0.1.0-alphav2", "0.1.0-alphav3", "0.1.0-alphav4", "beta",
+        "tor release", "naan release", "desktop app release"
+      ],
+      "content": "SynapseNet release history (public releases starting 2026):\n\n0.1.0-alpha — Initial public alpha. Basic node daemon, wallet creation, local GGUF model support, PoE v1 deterministic knowledge submission.\n\n0.1.0-alphaV2 — Tor integration milestone. Managed Tor runtime, Tor browser compatibility, SOCKS5 support, .onion search.\n\n0.1.0-alphaV3 — NAAN and architecture expansion. Node-attached autonomous agent baseline, multi-agent coordination, VS Code extension, SynapseIDE terminal client (Go), Tor bridge support (obfs4), cross-platform automation.\n\n0.1.0-alphaV3.5 — Hardening release. Scale policy (DoS protection, per-IP limits, overload mode), quantum security improvements, additional privacy modules.\n\n0.1.0-alphaV3.6 — Further improvements. Network scale hardening, additional test coverage, Tor bridge bridge pool and randomized selection.\n\n0.1.0-alphaV3.7 — Additional stability and hardening updates.\n\n0.1.0-alphaV4 (In Development, March 2026) — Major architectural migration:\n- Kill Go: Eliminate Go terminal IDE entirely\n- Rewrite everything in C++ (Go → C++ migration of all IDE components)\n- Replace bubbletea TUI with Tauri desktop application (TypeScript + Svelte + Monaco Editor)\n- libsynapsed: expose synapsed as a shared library with C ABI for Tauri FFI\n- Zero Go dependencies\n\nBeta: Not yet released. Still in heavy development.\n\nNote: The project was developed locally since 2023 before any public GitHub release. The repository currently contains documentation only (as of initial public release). Code is being released progressively as alpha stabilizes."
+    },
+    {
+      "id": "deferred_features",
+      "title": "Deferred Features",
+      "keywords": [
+        "deferred", "not implemented", "future features", "planned features", "roadmap",
+        "dht deferred", "kademlia deferred", "future work", "todo", "not active", "postponed",
+        "coming soon", "backlog"
+      ],
+      "content": "Features explicitly deferred from current development scope:\n\nDHT / KADEMLIA PEER DISCOVERY:\nStatus: Deferred (Decision Date: March 2026)\nReason: No DHT or Kademlia implementation exists in the current source tree, tests, or any active branch. The existing peer discovery system uses DNS seeds, bootstrap nodes, and peer exchange, which covers current network requirements.\nDHT-based discovery may be revisited when the network grows past the point where static seed lists and peer exchange become a bottleneck.\n\nPrerequisites for future DHT implementation:\n- Abuse controls (Sybil resistance, eclipse attack mitigation)\n- Rollout behind a feature flag\n- Integration tests with existing discovery subsystem\n- Operator documentation for mixed-mode discovery\n\nOTHER DEFERRED/FUTURE ITEMS (from PoE design doc):\n- Privacy/Quantum integration (after PoE + network + balances are stable and deterministic)\n- PoE formal whitepaper appendix (theorem + assumptions + proof sketch) — spec exists as PROOF_OF_EMERGENCE_FORMAL_SUPPLEMENT_v1.txt\n- Implant AI stack compatibility end-to-end (spec exists, primitives implemented in v0.2)\n- Advanced remote model privacy (provider-blind via TEE/SGX/SEV/TDX) — Phase 0/1 roadmap\n- Federated learning with secure aggregation for implant stack\n- QKD (Quantum Key Distribution) hardware integration — requires specialized hardware, future-only"
+    },
+    {
+      "id": "synapsenet_multiagent_board",
+      "title": "Multi-Agent Development Execution Board",
+      "keywords": [
+        "multi-agent", "agent coordination", "development agents", "agent 1", "agent 2",
+        "agent 3", "agent 4", "agent 5", "agent 6", "agent 7", "execution board", "shared log",
+        "ack protocol", "agent assignments", "documentation truth", "ui restructure",
+        "naan pipeline", "synapseide parity", "update governance agent", "ci gates",
+        "integration agent", "ai.txt", "february 23 2026", "229 tests", "230 tests"
+      ],
+      "content": "SynapseNet's development uses a Multi-Agent Execution Board (AI.txt) — a shared coordination system for 7 AI development agents.\n\nAGENT ASSIGNMENTS:\n- Agent 1 (Documentation Truth Owner): Keep all interface documents aligned with real code, RPC methods, tests, and workflows. Also serves as cross-agent compliance reviewer.\n- Agent 2 (Primary UI/TUI Restructure Owner): Finish pending primary UI work from V0_2_ATTACHED_AGENT_PRIMARY_UI_SPEC.txt. Implement minimal dashboard navigation, move legacy screens under AI Mining (NAAN) subpages.\n- Agent 3 (NAAN Pipeline + Contribution Automation Owner): Complete deterministic agent-driven contribution flow, remove manual gaps, enforce Tor-default routing, deterministic NAAN review flow.\n- Agent 4 (SynapseIDE + VS Code Parity Owner): Bring IDE feature parity for coding workflow and GitHub Quests path.\n- Agent 5 (Update/Implant Governance Owner): Complete and harden update + implant policy path to match v0.2 spec.\n- Agent 6 (CI/Release Gates Owner): Turn release-gate uncertainty into verifiable pass/fail evidence. Also owns network scale-out hardening for high node counts.\n- Agent 7 (Integration + Final Acceptance Owner): Integrate outputs from Agents 1-6, resolve conflicts, close final verification.\n\nCOORDINATION RULES:\n1. Own full scope end-to-end; no partial chunks\n2. Every implementation claim must include proof: changed file paths + command output\n3. Mark done only when build + relevant tests pass\n4. All updates in US English\n5. Append-only updates in shared file\n6. If blocked >30 minutes, write BLOCKED update with concrete unblock request\n7. Every completed action must be posted as a new log entry\n8. After any new log entry, all agents must append ACK entry\n9. Non-compliant entries called out until fixed\n10. No hidden/silent progress\n\nVERIFIED TEST RESULTS (February 23, 2026): 230/230 tests green."
+    },
+    {
+      "id": "use_cases",
+      "title": "Use Cases — Who Benefits from SynapseNet",
+      "keywords": [
+        "use cases", "who uses synapsenet", "journalists", "activists", "security researchers",
+        "privacy users", "authoritarian countries", "russia", "china", "iran", "dissidents",
+        "free press", "uncensored ai", "local ai benefits", "why use synapsenet",
+        "privacy protection", "knowledge mining use case", "earn money knowledge",
+        "ai without censorship", "privacy by design"
+      ],
+      "content": "SynapseNet serves several key use cases:\n\n1. JOURNALISTS IN AUTHORITARIAN COUNTRIES:\nProblem: Using ChatGPT or cloud AI exposes queries, IP, account identity to potential government requests.\nSynapseNet solution: Local AI = OpenAI sees nothing; Tor = authorities don't see traffic; Amnesia mode = no evidence on computer; Stealth addresses = anonymous transactions → Full protection.\n\n2. ACTIVISTS / DISSIDENTS:\nProblem: Cloud AI logs 'suspicious topics', shares data on government request.\nSynapseNet solution: You can ask ANYTHING; no one knows your queries; P2P network = cannot be shut down; Even if PC confiscated — amnesia mode → Freedom of research.\n\n3. SECURITY RESEARCHERS:\nProblem: ChatGPT censors 'dangerous' security research topics.\nSynapseNet solution: Uncensored local AI; darknet access for threat intel; earn NGT for discoveries; no censorship of sensitive security topics → Full access to knowledge.\n\n4. REGULAR PEOPLE WHO VALUE PRIVACY:\nProblem: Google/OpenAI build profiles on sensitive personal queries (health, finances, relationships, legal).\nSynapseNet solution: Your questions = your business; no profiling; no leaks to third parties; local = under your control → Privacy as a right, not a privilege.\n\n5. KNOWLEDGE CONTRIBUTORS / MINERS:\nAny person with knowledge can earn NGT by contributing to the network. Questions asked through your local AI are recorded, validated by the network, and earn NGT rewards. Smarter questions = more NGT earned.\n\n6. GPU / MODEL OWNERS:\nRent your powerful AI model to others through the marketplace. Set your price (e.g., 5 NGT/hour), set slot limits, earn passive NGT income.\n\n7. DEVELOPERS / CODERS:\nSubmit code patches as PoE entries through SynapseIDE. Earn NGT after epoch finalization for useful code contributions."
+    },
+    {
+      "id": "network_phases_and_stats",
+      "title": "Network Phases, Stats, and Design Targets",
+      "keywords": [
+        "network phases", "network size", "network stats", "design targets", "projections",
+        "12847 nodes", "1847293 entries", "847.3 gb", "network growth", "alpha devnet",
+        "devnet", "mainnet", "mainnet launch", "node count", "entry count",
+        "knowledge chain size", "growth rate", "network rank", "genesis phase",
+        "expansion phase", "emergence phase", "collective phase", "global phase",
+        "47 peers", "network uptime"
+      ],
+      "content": "SynapseNet uses a phased growth model. IMPORTANT: All statistics shown in the dashboard are ALPHA DEVNET sample metrics and design targets/projections — NOT live metrics from a running public mainnet.\n\nNETWORK GROWTH PHASES:\n1. Genesis [0 - 100K entries]: Network bootstrapped, core contributors join\n2. Expansion [100K - 1M entries]: Community growth, protocol stabilization\n3. Emergence [1M - 10M entries]: Network effect kicks in, self-sustaining growth ← DESIGN CURRENT\n4. Collective [10M - 100M entries]: Mainstream adoption, industry integration\n5. Global [100M+ entries]: Global knowledge infrastructure, AI-human collaboration at scale\n\nDESIGN TARGET STATISTICS (illustrative at design-scale operation, not live):\n- Global Knowledge Base: ~1,847,293 entries | Size: ~847.3 GB\n- Network Size: ~12,847 nodes online\n- Knowledge Chain size: 847.3 GB (similar to Bitcoin's ~850 GB blockchain)\n- Growth rate: +2,847 entries/hour at scale target\n- Growth rate: +1.2 GB/day at scale\n- Replication: Each entry copied to 12+ nodes (encrypted)\n- Node storage: ~65.9 MB per node (fair share of 847.3 GB ÷ 12,847 nodes)\n\nTARGET GROWTH TIMELINE (modeled, not live):\n- Launch: 0.0 GB\n- Month 3: ~10 GB\n- Month 6: ~90 GB\n- Month 9: ~250 GB\n- Year 1: ~500 GB\n- Year 2: ~850 GB\n- Future: ∞ No cap\n\nNODE STATES:\n- ONLINE (●): Connected to SynapseNet, syncing, contributing\n- OFFLINE (○): Local only, will sync when reconnected\n- SYNCING (◐): Catching up with network state"
+    },
+    {
+      "id": "poe_v1_implementation",
+      "title": "PoE v1 Implementation — Code Anchors and RPC",
+      "keywords": [
+        "poe v1 code", "canonicalbodybytes", "contentid", "submitid", "signaturehash",
+        "verifypow", "verifysignature", "checkLimits", "leading zero bits", "minthash",
+        "simhash", "simhash64", "novelty bands", "simbucket", "poe v1 engine open",
+        "genesis seed", "synapsenet_poe_v1_genesis", "epoch id", "validator mode",
+        "stake mode", "validator min stake atoms", "poe sync", "poe getinv", "poe inv",
+        "poe entry", "poe vote", "poe epoch", "reward formula", "acceptance reward",
+        "epoch reward", "finalize", "rewardid", "idempotent reward"
+      ],
+      "content": "PoE v1 implementation code anchors from KeplerSynapseNet/src/core/poe_v1_objects.cpp and poe_v1_engine.cpp.\n\nCORE FUNCTIONS (poe_v1_objects.cpp):\n\ncanonicalizBodyBytes() — Deterministic encoding of all consensus fields:\n  writeU8(out, version)\n  writeU64LE(out, timestamp)\n  out.insert(authorPubKey)\n  writeU8(out, contentType)\n  writeVarBytes(out, canonicalizeText(title))\n  if CODE: writeVarBytes(out, canonicalizeCode(body))\n  else: writeVarBytes(out, canonicalizeText(body))\n  writeU32LE(out, citations.size())\n  for each citation: out.insert(citation bytes)\n  writeU32LE(out, powBits)\n\ncontentId() = SHA256(canonicalBodyBytes())\nsubmitId() = SHA256(contentId || powNonce)\nsignatureHash() = SHA256(canonicalBodyBytes || powNonce)\n\nverifyPoW(): checks hasLeadingZeroBits(submitId(), powBits)\ncheckLimits(): enforces maxTitleBytes, maxBodyBytes, maxCitations, min/maxPowBits\nverifyAll(): checkLimits + verifyPoW + verifySignature\n\nSIMHASH BUCKET CONSTRUCTION (poe_v1_engine.cpp):\n  uint64_t sh = e->contentSimhash64()\n  Store: poe:v1:simhash:<sidHex>\n  Store: poe:v1:contentid:<contentId_hex>\n  For band in [0..noveltyBands): bucket key = poe:v1:simbucket:<band>:<2-hex>:<sidHex>\n  Bands: up to 16 bands, 4-bit partitions of 64-bit SimHash\n\nENGINE INITIALIZATION (genesis):\n  seed = SHA256('synapsenet_poe_v1_genesis')\n  Stored at: meta:poe_v1:seed, meta:poe_v1:version=1\n  Persists: entryCount, finalizedCount, epoch_id\n\nVALIDATOR MODE CONFIG:\n  validatorMode=stake\n  validatorMinStakeAtoms=<threshold>\n  Identity/stake records persisted and deterministically resolved\n\nP2P SYNC PROTOCOL:\n  poe_getinv / poe_inv (paging inventory, not 'last N')\n  inv/getdata → poe_entry / poe_vote / poe_epoch\n  Paging ensures full sync even for large entry sets\n\nRPC ENDPOINTS:\n  poe.submit, poe.vote, poe.finalize, poe.epoch\n  poe.validators, poe.submit_code, poe.list_code, poe.fetch_code\n  poe.export, poe.import\n  CLI helpers: synapsed poe pubkey, synapsed poe validators"
+    },
+    {
+      "id": "ngts_transaction_utxo_code",
+      "title": "NGT Transaction and UTXO Implementation",
+      "keywords": [
+        "transaction code", "utxo code", "totaloutput", "verify transaction", "sig hash",
+        "computehash", "transfer manager", "utxo set", "mempool transactions", "totalSupply",
+        "txcounter", "transfer db", "apply utxo", "rollback utxo", "reorg", "coinbase",
+        "miner reward", "deterministic reward", "rewardid", "credit reward deterministic",
+        "fee config", "lock guard mutex", "wallet db", "transfer.cpp"
+      ],
+      "content": "NGT transaction implementation from KeplerSynapseNet/src/core/transfer.cpp:\n\nTRANSACTION TOTAL OUTPUT:\n  uint64_t Transaction::totalOutput() const {\n    uint64_t total = 0;\n    for (const auto& outp : outputs) total += outp.amount;\n    return total;\n  }\n\nSIGNATURE VERIFICATION:\n  bool Transaction::verify() const {\n    for (const auto& inp : inputs) {\n      crypto::Hash256 sigHash = computeHash();\n      if (!crypto::verify(sigHash, inp.signature, inp.pubKey)) return false;\n    }\n    return true;\n  }\n\nTRANSFER MANAGER STATE:\n  struct TransferManager::Impl {\n    database::Database db;\n    std::unordered_map<std::string, std::vector<UTXO>> utxoSet;\n    std::unordered_map<std::string, Transaction> mempool;\n    uint64_t txCounter = 0;\n    uint64_t totalSupply_ = 0;\n    mutable std::mutex mtx;\n  };\n\nKEY FEATURES:\n- UTXO ownership enforced: input pubkey must match the UTXO address\n- Deterministic reward crediting: rewardId → unique UTXO (idempotent)\n- Mempool policy: expiry, size cap, fee checks, deterministic eviction rules\n- Block apply/rollback: deterministic UTXO updates on block import/mine\n- Single-instance lock: robust fcntl lock, no stale locks after downloads\n- --reset-ngt flag: wipes local transfer DB (fixes wrong balances from testing)\n\nP2P TX GOSSIP:\n  inv/getdata for mempool sync\n  mempool → inv → getdata on peer connect\n  tx message type for broadcast"
+    },
+    {
+      "id": "privacy_subsystem_code",
+      "title": "Privacy Subsystem — Code Modules",
+      "keywords": [
+        "privacy code", "privacy modules", "onion service", "hidden service", "add_onion",
+        "ed25519-v3", "socks5 proxy", "socks5 client", "dandelion++", "stem phase", "fluff phase",
+        "decoy traffic", "dummy traffic", "stealth addresses", "one-time address", "unlinkable payments",
+        "session crypto", "per-session keys", "hidden volume", "amnesia mode", "ram only",
+        "mix inference", "traffic analysis", "privacy manager", "privacy off standard full"
+      ],
+      "content": "Privacy subsystem code modules from KeplerSynapseNet/src/privacy/:\n\nprivacy.cpp — Privacy manager: mode selection (OFF / STANDARD / FULL)\nprivacy_manager.cpp — Privacy lifecycle and state coordination\nonion_service.cpp — Tor hidden service: ADD_ONION via control port, Ed25519-V3 keys for .onion addresses\nsocks5_proxy.cpp — SOCKS5 client for routing all traffic through Tor\ndandelion.cpp — Dandelion++ protocol: transaction anonymization (stem → fluff phases)\ndecoy_traffic.cpp — Dummy traffic generation to resist traffic analysis patterns\nstealth_address.cpp — One-time stealth addresses for unlinkable payments\nsession_crypto.cpp — Per-session encryption keys (forward secrecy)\nhidden_volume.cpp — Hidden encrypted volumes for plausible deniability\namnesia.cpp — Amnesia mode: RAM-only operation, zero disk traces, secure memory wipe\nmix_inference.cpp — Mix network for AI inference requests to prevent correlation\ntraffic_analysis.cpp — Traffic analysis detection and countermeasures\n\nTOR SUBSYSTEM (src/core/):\ntor_route_policy.cpp — Routing policy engine: TOR_ONLY / HYBRID / CLEARNET / DEGRADED modes\ntor_process_guard.cpp — Managed Tor process: spawn, monitor, restart with backoff\ntor_bridge_provider.cpp — obfs4 bridge provider: file, cache, remote fetch with rate limiting\ntor_bridge_utils.cpp — Bridge line parsing, validation, deduplication\ntor_control_runtime.cpp — Tor control port operations: mode switching, bridge refresh, restart\ntor_status_runtime.cpp — Tor status monitoring: bootstrap state, readiness, degradation"
+    },
+    {
+      "id": "web4_clearnet_onion_search",
+      "title": "Web4 Clearnet + Onion Search Module",
+      "keywords": [
+        "web search", "clearnet search", "onion search", "web module", "search config",
+        "duckduckgo", "brave", "search engines", "html extractor", "query detector",
+        "ai wrapper", "context injection", "search config", "clearnet engines",
+        "darknet engines", "timeout", "max results", "max page size", "route clearnet tor",
+        "connector audit", "research connectors", "naan web", "web4 search",
+        "search relevance", "title matches", "snippet matches", "web stats"
+      ],
+      "content": "SynapseNet's Web4 search module enables clearnet and onion source research, integrated into both the AI chat and NAAN agent.\n\nCONFIG FILE: ~/.synapsenet/web_search.conf (auto-created if missing)\n\nDEFAULT CLEARNET ENGINES: duckduckgo, brave\nDEFAULT DARKNET ENGINES: ahmia, torch, darksearch, deepsearch\n\nKEY CONFIG PARAMETERS:\n  clearnet_engines=duckduckgo,brave\n  darknet_engines=ahmia,torch,darksearch,deepsearch\n  timeout_seconds=10\n  max_results_per_engine=10\n  max_page_size=262144\n  route_clearnet_through_tor=0\n  tor_socks_host=127.0.0.1\n  tor_socks_port=9050\n\nNAAN CONNECTOR CONFIG:\n  connector_probe_clearnet_urls=<comma-separated URLs>\n  connector_probe_tor_urls=<comma-separated URLs>\n  connector_probe_onion_urls=<comma-separated URLs>\n  connector_allow_domains=<comma-separated domain tokens>\n  connector_deny_domains=<comma-separated domain tokens>\n\nOPERATOR TOGGLES (synapsenet.conf):\n  web.inject.enabled=true|false\n  web.inject.onion=true|false\n  web.inject.tor_clearnet=true|false\n\nRELEVANCE SCORING:\n  relevance_score = 2.0 × title_matches + 1.0 × snippet_matches + 1.5 × domain_matches\n\nSTATISTICS TRACKED: successfulFetches, failedFetches, bytesDownloaded\nfailureRate = failedFetches / max(1, totalFetches)\n\nCODE MODULES (src/web/, wc -l snapshot):\n  ai_wrapper.cpp (353), curl_fetch.cpp (145), darknet_engines.cpp (52),\n  deep_search_wrapper.cpp (173), forum_crawler.cpp (128), html_extractor.cpp (468),\n  onion_search_router.cpp (92), query_detector.cpp (284), research_connectors.cpp (721),\n  rpc_server.cpp (531), search_config.cpp (276), tor_engine.cpp (336),\n  tor_fetch.cpp (193), tor_runtime.cpp (719), web_search.cpp (478)\n  Total web module: ~5,551 lines\n\nINTEGRATION: TUI chat → AIWrapper/WebSearch (5/6/7 keys). NAAN background loop → ResearchConnectorService for bounded, policy-gated research artifacts. NAAN reloads web_search.conf on each RESEARCH tick without restart."
+    },
+    {
+      "id": "remediation_backlog",
+      "title": "Remediation Backlog — P0 Blockers and Improvements",
+      "keywords": [
+        "remediation", "p0 blockers", "p1 hardening", "p2 improvements", "backlog",
+        "float to atoms", "integer balance", "split main.cpp", "self validator bootstrap",
+        "quantum claims", "liboqs", "wallet balance atoms", "atomic units",
+        "transaction integer", "double to uint64", "main.cpp split", "9518 lines",
+        "14388 lines", "extract modules", "bootstrap policy", "strict mode trigger",
+        "peer count threshold", "mainnet readiness remediation"
+      ],
+      "content": "SynapseNet Remediation TODO (US English), Snapshot: March 18, 2026.\n\nP0 RELEASE BLOCKERS:\n\n[x] 1. Replace floating-point wallet balances with atom-based integers\n- Canonical atomic unit: uint64_t AmountAtoms, 1 NGT = 100,000,000 atoms\n- Wallet API, storage, all balance fields, getters, setters, serializers, RPC payloads, TUI formatting paths migrated from double to atoms\n- CLI balance/reward output now reads: balanceAtoms, creditedAtoms, mintedAtoms, mintedSelfAtoms\n- Progress: core::Wallet atom storage confirmed; remaining floating reward/presentation fields outside wallet balance state need cleanup\n\n[x] 2. Split src/main.cpp into owned modules\n- main.cpp started at 14,388 lines, reduced to 9,518 lines after multiple extraction passes\n- Extracted modules: cli_parser.cpp, config_loader.cpp, cli_rpc_client.cpp, rpc_commands.cpp, node_runtime.cpp, node_init.cpp, tui_command_bridge.cpp, tui_runtime.cpp, tui_snapshot_builder.cpp, rpc_node_views.cpp, rpc_naan_views.cpp, rpc_poe_views.cpp, rpc_model_views.cpp, rpc_update_views.cpp, rpc_ai_runtime.cpp, rpc_naan_runtime.cpp, rpc_update_runtime.cpp, node_status_runtime.cpp, tor_control_runtime.cpp, tor_status_runtime.cpp, maintenance_runtime.cpp, poe_runtime.cpp\n- Goal: main.cpp becomes a thin composition root only\n\n[x] 3. Add automatic exit from self-validator bootstrap mode\n- Added deterministic bootstrap-to-strict policy logic: poe_bootstrap_policy.h\n- Persisted strict-mode activation with connected-peer, known-peer, and validator-count thresholds + hysteresis\n- Operator-visible in RPC (node.status) and TUI network panels\n- Temporary override: poe.self_validator_bootstrap_force_allow_until\n\n[ ] 4. Make quantum-security claims match runtime reality\n- Startup logs and node.status now report PQC backend state: development_simulation, compiled_real_backend_unavailable, mixed_real_and_simulated, real_pqc\n- Real liboqs integration path behind #ifdef USE_LIBOQS (kyber, dilithium, sphincs all have real paths)\n- CMake controls: SYNAPSE_FETCH_LIBOQS, SYNAPSE_REQUIRE_REAL_PQC\n- CI: dedicated PQC Real Backend (liboqs) job\n- Remaining gap: clean-run validation of fetched-liboqs path in CI"
+    },
+    {
+      "id": "node_startup_sequence",
+      "title": "Node Startup Sequence and Boot Screens",
+      "keywords": [
+        "startup", "boot", "initialization", "loading configuration", "quantum cryptography",
+        "wallet load", "ai engine", "knowledge network connect", "boot screen", "syncing",
+        "network discovery", "first time user", "wallet creation", "24 word seed",
+        "returning user", "connected status", "boot sequence", "space to continue",
+        "synapsed launch", "ncurses startup"
+      ],
+      "content": "SynapseNet node startup sequence (TUI boot flow):\n\nLAUNCH: TERM=xterm-256color ./KeplerSynapseNet/build/synapsed\n\nSCREEN 1 — BOOT:\n- ASCII art 'SYNAPSENET' banner\n- 'A Decentralized Intelligence Network'\n- Version + 'by Kepler'\n- Kepler's quote\n\nSCREEN 2 — INITIALIZATION:\n- [■■■■...] 100% progress bar\n- ✓ Loading configuration... [OK]\n- ✓ Initializing quantum-resistant cryptography... [OK]\n- ✓ Loading wallet: syn1qx7f...a3d2 [OK]\n- ✓ Starting local AI engine... [OK]\n- ✓ Connecting to Knowledge Network... [OK]\n\nSCREEN 3 — NETWORK DISCOVERY:\n- Discovers peers by city/location with ping times\n- 'Connected to 8 peers. Discovering more...'\n- Network Status: CONNECTING...\n\nSCREEN 4 — SYNCING KNOWLEDGE:\n- Knowledge Chain Sync progress: 847.3 GB network vs local copy\n- Progress bar with speed and ETA\n- 'Syncing knowledge entries... 1,847,201 / 1,847,293'\n\nFIRST-TIME USER (SCREEN 5):\n- [1] Create New Wallet\n- [2] Import Existing Wallet\n- [3] View Documentation\n\nWALLET CREATION (SCREEN 6):\n- Generates quantum-resistant keys\n- Shows 24-word seed phrase (WRITE IT DOWN, do NOT store digitally)\n- Requires confirmation before proceeding\n\nRETURNING USER (SCREEN 8):\nDisplays: Node ID, Status (ONLINE), Wallet address, Balance (1,247.83 NGT example), Network (12,847 nodes), Knowledge Chain (847.3 GB), Your Contributions (2,847 entries), Quality Score (94.7%), Last Session, Earned While Away.\n\nWEB/TOR FIRST-RUN PROMPT (Screen::WEB_PROMPT):\n- Asks opt-in for: web injection, onion sources, Tor for clearnet\n- Stored to synapsenet.conf\n- Only shown once (first run)"
+    },
+    {
+      "id": "python_sandbox",
+      "title": "Python Sandbox and Bridge",
+      "keywords": [
+        "python", "python sandbox", "python bridge", "sandboxed python", "embedded python",
+        "python security", "restricted imports", "allowed imports", "blocked imports",
+        "resource limits", "50 mb", "1 second", "recursion limit", "python isolation",
+        "knowledge types", "rules python", "poe python", "scoring python", "sandbox security"
+      ],
+      "content": "SynapseNet embeds Python for extensibility but with strict security sandboxing.\n\nSECURITY MEASURES:\n1. Restricted Imports:\n- ALLOWED: math, json, hashlib, typing, dataclasses\n- BLOCKED: os, sys, subprocess, socket, ctypes, importlib\n- NO file I/O, NO network access, NO system calls\n\n2. Resource Limits:\n- Memory: max 50 MB per Python call\n- CPU Time: max 1 second per call\n- Recursion: max 100 depth\n\n3. Input Validation:\n- All data from C++ sanitized before passing to Python\n- Python output validated before C++ uses it\n- Type checking enforced (no arbitrary objects)\n\n4. Execution Context:\n- Python runs in separate thread (not main loop)\n- Timeout kills hung scripts\n- Errors caught, logged, don't crash node\n\nWHAT PYTHON CAN DO:\n✓ Calculate scores\n✓ Validate knowledge format\n✓ Apply scoring rules\n✓ Process structured data\n\nWHAT PYTHON CANNOT DO:\n✗ Access filesystem\n✗ Make network requests\n✗ Execute system commands\n✗ Import arbitrary modules\n\nPython files: KeplerSynapseNet/src/python/knowledge_types.py, rules.py, poe.py, scoring.py\nCode: KeplerSynapseNet/src/python/python_bridge.cpp, sandbox.cpp"
+    },
+    {
+      "id": "poe_stake_requirements_anti_sybil",
+      "title": "PoE Stake Requirements and Anti-Sybil",
+      "keywords": [
+        "stake", "staking", "10 ngt stake", "100 ngt stake", "anti-sybil", "sybil attack",
+        "sybil resistance", "fake identity", "collusion attack", "stake accumulation",
+        "validator stake", "submitter stake", "stake refund", "stake penalty",
+        "stake slash", "minimum stake", "stake for submission", "stake for validation",
+        "attacker stake", "majority stake", "honest majority"
+      ],
+      "content": "Stake requirements in SynapseNet serve both anti-spam and anti-Sybil functions.\n\nSTAKE REQUIREMENTS:\n- Knowledge submission: 10 NGT minimum stake (refundable if accepted, lost if rejected as spam)\n- Validation: 100 NGT minimum stake per validator\n\nANTI-SYBIL DESIGN:\n- Stake requirement prevents cheap fake identities (each fake identity needs 100 NGT)\n- Random validator selection: cannot choose your friends or coordinate ahead of time\n- Reputation builds over time: new accounts have low weight and selection probability\n- Rate limiting per address: max X submissions per hour\n- Stake-weighted selection (but capped): wealthy attackers can dominate but cost is high\n\nATTACK VECTORS ON STAKE SYSTEM:\n1. COLLUSION: If 3+ validators collude, they can approve garbage.\n- Mitigation: random selection from large pool, stake slashing for outlier votes, reputation decay\n- Effectiveness: reduces probability, doesn't eliminate\n\n2. STAKE ACCUMULATION: Wealthy attacker buys enough stake to dominate validator pool.\n- Mitigation: validator selection weighted by stake but capped; reputation matters more than raw stake over time\n- Effectiveness: raises cost; doesn't prevent nation-state actors\n\n3. LLM SPAM FLOOD: AI-generated plausible-looking garbage overwhelms network.\n- Mitigation: 10 NGT stake requirement per submission, rate limits, validator training to detect AI content\n- Effectiveness: economic barrier; arms race continues\n\n4. SYBIL VALIDATORS: Many fake identities to increase selection probability.\n- Mitigation: 100 NGT minimum stake per validator; reputation builds slowly; stake-weighted random selection\n- Effectiveness: expensive; not impossible for well-funded attackers\n\nHONEST ASSESSMENT: PoE is a heuristic, not a mathematical proof. It makes attacks expensive, not impossible. Security depends on honest majority: if >50% of stake is malicious, the system fails. Same limitation as Bitcoin's PoW."
+    },
+    {
+      "id": "naan_tor_bridge_setup",
+      "title": "NAAN Tor Bridge Setup and Supported Modes",
+      "keywords": [
+        "tor bridge setup", "naan tor", "obfs4 setup", "bridge config", "external tor",
+        "managed tor", "auto tor", "tor conflict", "9050 9150 conflict", "torreadyforweb",
+        "torbootstrapstate", "torconflicthint9050", "bootstrap percent", "bridge pool",
+        "bridge ttl", "bridge cache", "manual bridge", "bridges file", "naan allowlist",
+        "site allowlist", "clearnet allowlist", "onion allowlist", "naan web conf"
+      ],
+      "content": "NAAN Tor Bridge Setup Status and Supported Modes (Version v1, Status Date: 2026-02-27)\n\nIMPLEMENTED STATUS:\n[x] Tor runtime mode selection in config (agent.tor.mode)\n[x] Modes: auto, managed, external\n[x] External Tor using custom SOCKS port (127.0.0.1:9150)\n[x] Managed Tor startup with orchestration\n[x] Safe managed-Tor shutdown (PID file + ownership checks)\n[x] Managed-Tor FD inheritance fix (RPC/P2P sockets not inherited)\n[x] torReadyForWeb runtime field (real SOCKS traffic probe)\n[x] torBootstrapState runtime field\n[x] 9050 vs 9150 conflict hint (torConflictHint9050)\n[x] macOS occupied-port owner diagnostics\n[x] macOS optional occupied-port takeover (--takeover-port-owner)\n[x] Startup wizard bridge-mode step (none, obfs4, external)\n[x] Startup wizard bridge paste flow (press [P])\n[x] Settings menu bridge shortcut (press [T])\n[x] Settings menu site allowlist editor (press [W])\n\nMINIMUM EXTERNAL TOR (9150) CONFIG:\n  agent.tor.required=true\n  agent.tor.mode=external\n  agent.routing.allow_clearnet_fallback=false\n  agent.routing.allow_p2p_clearnet_fallback=false\n  agent.tor.socks_host=127.0.0.1\n  agent.tor.socks_port=9150\n  tor.socks.host=127.0.0.1\n  tor.socks.port=9150\n\nQUICK NO-CONFLICT COMMAND SEQUENCE (macOS):\n1. Stop extra Tor owners (optional): pkill -f '/Applications/Tor Browser.app/...'\n2. Start shared external Tor on 9150: tools/macos_tor_obfs4_helper.sh --bridges-file /tmp/bridges.txt --socks-port 9150 --bootstrap-check --keep-running\n3. Verify: lsof -nP -iTCP:9150 && curl --socks5-hostname 127.0.0.1:9150 https://check.torproject.org/api/ip\n4. Start SynapseNet: TERM=xterm-256color ./build/synapsed -D /tmp/synapsenet_fresh --dev -c /tmp/synapsenet_external_9150.conf\n5. Start Tor Browser as SOCKS client: TOR_PROVIDER=none TOR_SOCKS_HOST=127.0.0.1 TOR_SOCKS_PORT=9150 '/Applications/Tor Browser.app/Contents/MacOS/firefox' --new-instance\n\nKNOWN LIMITS:\n- Bridge distribution is often interactive (CAPTCHA/JS); runtime adapter returns manual_step_required and asks operator to provide bridge lines via file/manual config\n- Linux and Windows live external-validation evidence still pending on real hosts\n- Site allowlist is operator-controlled and security-sensitive: adding untrusted domains can expose to malicious content"
+    },
+    {
+      "id": "synapsenet_0_1_release",
+      "title": "SynapseNet 0.1 Release Summary",
+      "keywords": [
+        "synapsenet 0.1", "release 0.1", "0.1.0-beta", "beta release", "release summary",
+        "included areas", "ngt wallet", "tor bridge components", "privacy modules",
+        "model loader", "web connector", "cross-platform runbooks", "beta snapshot",
+        "release notes", "license mit", "first release"
+      ],
+      "content": "SynapseNet 0.1 Release:\n- Version: 0.1.0-beta\n- Project: SynapseNet / KeplerSynapseNet\n- Repository root: Synapsenet-main\n- License: MIT\n\nSUMMARY: SynapseNet 0.1 provides a local-first decentralized intelligence node with:\n- PoE-based knowledge contribution and validation flows\n- NGT wallet/ledger/transfer foundations\n- Node-attached agent runtime (NAAN)\n- TUI-based operations and diagnostics\n- Optional web context injection (clearnet/onion) with Tor-first routing controls\n\nINCLUDED AREAS:\n- Core consensus, ledger, wallet, transfer\n- Agent runtime/scheduler/coordination/score/storage pipeline\n- Tor bridge/provider/process-guard/route-policy components\n- Privacy modules (onion service, SOCKS5, dandelion, traffic controls)\n- Model loader/inference/marketplace foundations\n- Web connector stack (search, extraction, audit, RPC)\n- Cross-platform Tor validation and automation runbooks/scripts\n\nNOTES:\n- This is a beta release snapshot and may change quickly\n- Operator should use runbooks under KeplerSynapseNet/docs/ for Tor and validation workflows\n- Architecture/specification source of truth remains in interfaces txt/\n\nCurrent repository status: Documentation only initially released; code is being released progressively. Network statistics in documentation are visualizations/design targets, not live metrics from a running public network."
+    },
+    {
+      "id": "synapsenet_bitcoin_comparison",
+      "title": "SynapseNet vs Bitcoin — Detailed Technical Comparison",
+      "keywords": [
+        "bitcoin comparison", "bitcoin vs synapsenet", "satoshi comparison", "proof of work vs poe",
+        "blockchain vs knowledge chain", "btc vs ngt", "21 million cap vs no cap",
+        "mining hardware vs intelligence", "bitcoin 0.1 vs synapsenet 0.1",
+        "31794 lines bitcoin", "synapsenet code size", "satoshi", "knowledge blockchain",
+        "bitcoin inspiration", "decentralized currency vs decentralized ai"
+      ],
+      "content": "Detailed comparison between Bitcoin 0.1 (January 2009) and SynapseNet 0.1:\n\nCORE CONCEPT COMPARISON:\n| Dimension | Bitcoin | SynapseNet |\n|---|---|---|\n| Decentralizes | Currency | AI / Knowledge |\n| Mining method | Hardware (SHA-256 PoW) | Intelligence (PoE) |\n| Created by | Satoshi Nakamoto | Kepler |\n| Token | BTC | NGT |\n| Consensus | Proof of Work | Proof of Emergence |\n| Storage | Blockchain (~850 GB) | Knowledge Chain (~847 GB+ target) |\n| Cap | 21 million BTC (hard cap) | No cap (dynamic emission) |\n| Quote | Original whitepaper | 'Satoshi gave us money without banks. I will give you brains without corporations.' |\n\nBITCOIN 0.1 CODE STATS (January 2009):\n- Total: 31,794 lines of C++ code (one binary: bitcoin.exe)\n- GUI (Qt-based): ~15,000 lines, Blockchain core (main.cpp): 2,660 lines\n- Networking (net.cpp): 1,020 lines, Cryptography (sha.cpp + key.h): ~1,154 lines\n- Dependencies: OpenSSL, MinGW, Qt, Berkeley DB, Boost\n\nSYNAPSENET 0.1 CODE STATS (January 2026):\n- Total: 57,897 lines of code (KeplerSynapseNet/{src,include,tests})\n- C++: 46,436 lines | Headers: 5,045 lines | Python: 1,184 lines | Tests: 5,232 lines\n- ONE BINARY: synapsed (daemon + TUI + CLI)\n- src/tui: 10,496 lines | src/core: 6,960 lines | src/main.cpp: 5,476 lines\n- src/model: 3,871 | src/web: 3,367 | src/network: 3,461\n- WITH ALL (tests + privacy + quantum): 57,897 lines\n- Full project (~1 million lines including documentation and all repos)\n\nPHILOSOPHICAL PARALLEL:\n- Satoshi: 'The system is secure as long as honest nodes collectively control more CPU power'\n- Kepler: 'Secure as long as honest validators collectively control more stake than attackers'\n- Both: Transparent about limitations; honest engineering over marketing"
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is SynapseNet?",
+      "a": "SynapseNet is a decentralized peer-to-peer network for collective intelligence. It is to knowledge what Bitcoin is to money — nodes mine intelligence instead of hashes, contributors earn NGT tokens, and every local AI benefits from shared community knowledge."
+    },
+    {
+      "q": "Who created SynapseNet?",
+      "a": "SynapseNet was created by Kepler (GitHub: anakrypt-kepler). Development began in 2023 and was done entirely locally for three years before the first public release in 2026. The project has approximately 1 million lines of code and documentation."
+    },
+    {
+      "q": "What is NGT?",
+      "a": "NGT stands for Neural Growth Token. It is the native token of SynapseNet earned by contributing knowledge, validating others' contributions, or renting your AI model. NGT cannot be purchased in-protocol — it can only be earned by protocol outcomes or transferred between wallet addresses."
+    },
+    {
+      "q": "How do I earn NGT?",
+      "a": "You earn NGT by: (1) contributing valuable knowledge → base_reward * quality_score; (2) validating others' contributions → small fee per validation; (3) keeping your node online → passive rewards; (4) renting your AI model to others (PAID mode) → NGT per hour. Early participants earn more due to the dynamic emission model."
+    },
+    {
+      "q": "What is Proof of Emergence (PoE)?",
+      "a": "Proof of Emergence is SynapseNet's consensus mechanism for validating knowledge contributions. Unlike Proof of Work (burn energy) or Proof of Stake (lock capital), PoE rewards useful knowledge. It uses: Hashcash-style PoW as anti-spam gate, deterministic SimHash novelty check, random validator selection, M-of-N voting (3-of-5), and epoch-based citation graph rewards."
+    },
+    {
+      "q": "Can I buy NGT?",
+      "a": "No. NGT cannot be purchased in-protocol. It can only be earned through protocol outcomes (knowledge contributions, validation, model rental) or transferred between wallet addresses. This is an immutable creator rule."
+    },
+    {
+      "q": "What is NAAN?",
+      "a": "NAAN stands for Node-Attached Autonomous Agent Network. When you run a SynapseNet node, an attached background agent automatically starts. This agent autonomously researches topics, drafts knowledge entries, validates others' submissions, and earns NGT rewards. You cannot disable it while the node runs — to stop it, exit synapsed."
+    },
+    {
+      "q": "Is SynapseNet private?",
+      "a": "Yes, SynapseNet has multiple privacy modes: --privacy (Tor + E2E + scrubbed logs), --privacy --stealth (+ stealth addresses + Dandelion++), --amnesia (RAM-only, zero disk traces), --hidden-wallet (plausible deniability). However, perfect privacy is NOT guaranteed — global adversaries monitoring all Tor traffic may still correlate patterns. Anonymity is a spectrum, not a switch."
+    },
+    {
+      "q": "What AI models does SynapseNet support?",
+      "a": "SynapseNet supports GGUF format models (llama.cpp compatible). The default model is Llama 2 7B Chat (Q2_K, ~2.6 GB). You can also use Llama 3.x, Mistral 7B, Phi-2, Phi-3, CodeLlama, or your own fine-tuned models. ONNX, SafeTensors, and PyTorch formats are planned. Models are stored in ~/.synapsenet/models/."
+    },
+    {
+      "q": "What is the Knowledge Chain?",
+      "a": "The Knowledge Chain is SynapseNet's distributed database of human knowledge. It is like a blockchain but stores intelligence instead of transactions. Design target: ~847 GB (similar to Bitcoin's ~850 GB). Each node stores a fair share (~65 MB at design scale). Knowledge is automatically replicated to 12+ nodes and cannot be deleted by any single actor."
+    },
+    {
+      "q": "Does SynapseNet use Tor?",
+      "a": "Yes. SynapseNet uses Tor by default (agent.tor.required=true). All NAAN research, P2P connections, and web searches route through Tor SOCKS5. Supports obfs4 bridges for censored networks. Runs as fail-closed: if Tor is unavailable, traffic is blocked rather than falling back to clearnet."
+    },
+    {
+      "q": "What is DHT/Kademlia in SynapseNet?",
+      "a": "DHT/Kademlia peer discovery is deferred. No implementation exists in the current source tree. SynapseNet currently uses DNS seeds, bootstrap nodes, and peer exchange (GETPEERS/PEERS) for peer discovery, which covers current requirements. DHT may be added when the network grows beyond what static seeds can handle."
+    },
+    {
+      "q": "Is SynapseNet quantum resistant?",
+      "a": "SynapseNet implements a multi-layer quantum security stack. Layer 0: Classic (Ed25519, AES-256-GCM, X25519). Layer 1: Lattice-based PQC (ML-KEM-768/Kyber, ML-DSA-65/Dilithium). Layer 2: Hash-based PQC (SPHINCS+). Layer 3: OTP. Layer 4: QKD (future). Quantum security requires the liboqs library — without it, PQC runs in simulation mode which is clearly disclosed in node.status."
+    },
+    {
+      "q": "How do I run SynapseNet?",
+      "a": "Build: cmake -S KeplerSynapseNet -B KeplerSynapseNet/build -DCMAKE_BUILD_TYPE=Release -DBUILD_TESTS=ON && cmake --build KeplerSynapseNet/build --parallel 8. Run: TERM=xterm-256color ./KeplerSynapseNet/build/synapsed. Docker: docker run --rm -it -p 8332:8332 keplersynapsenet:local."
+    },
+    {
+      "q": "What is the SynapseIDE?",
+      "a": "SynapseIDE is SynapseNet's coding environment. It has two surfaces: (1) terminal IDE (synapseide) built in Go, featuring isolated threads (/tangent), unified diff patch mode (/patch), and GitHub Quests; (2) VS Code extension (ide/synapsenet-vscode) with inline AI completions, chat panel, and GitHub Quests workflow. In v0.1.0-alphaV4, the Go terminal IDE is being replaced with a Tauri desktop app."
+    },
+    {
+      "q": "Can I fork SynapseNet?",
+      "a": "You can fork the code, but any fork that changes core behavior, removes safeguards, or bypasses prohibitions is NOT an official SynapseNet project. NGT earned by such a fork is not recognized or associated with SynapseNet. Wallets tied to such violations may be subject to automatic burn by community decision."
+    },
+    {
+      "q": "What is v0.1.0-alphaV4?",
+      "a": "alphaV4 is a major architectural migration that: eliminates Go from the project entirely, rewrites all Go components (synapseide terminal IDE) in C++, replaces the bubbletea terminal TUI with a Tauri desktop application (TypeScript + Svelte + Monaco Editor), exposes synapsed as libsynapsed.so/dylib/dll for Tauri FFI, and uses one build system (CMake + Cargo) instead of two (CMake + go build)."
+    },
+    {
+      "q": "What cryptographic primitives does SynapseNet use?",
+      "a": "Classic: SHA-256, Ed25519 (signatures), AES-256-GCM (encryption), X25519 (key exchange), secp256k1 (Bitcoin-compatible). Post-quantum: CRYSTALS-Kyber/ML-KEM-768 (KEM), CRYSTALS-Dilithium/ML-DSA-65 (signatures), SPHINCS+/SLH-DSA-128s (hash-based signatures). OTP: HKDF-based deterministic one-time pad. QKD: BB84 protocol (future). Hashing: SHA-256 for all content IDs and PoW."
+    },
+    {
+      "q": "What is Web 4.0 in SynapseNet?",
+      "a": "Web 4.0 is SynapseNet's vision: you talk to a local agent (a model you own, running on your hardware). The agent optionally fetches context from clearnet and onion sources, cross-checks it, extracts signal, and returns a synthesized answer with citations. This is not 'search' — it is a digital cortex: an extension of cognition that lives on your machine, not on someone else's API. The primary currencies in Web 4.0 are inference (compute you provide or rent) and useful knowledge (Proof of Emergence)."
+    },
+    {
+      "q": "Is SynapseNet's mainnet launched?",
+      "a": "No. As of March 2026, SynapseNet is in active alpha development (v0.1.0-alphaV4). All network statistics, knowledge chain sizes (~847 GB), and node counts in the documentation are visualizations of how the system is designed to operate at scale — they are modeled projections, not live metrics from a running public network. The website synapsenetai.org is currently offline."
+    },
+    {
+      "q": "What is the NGT token cap?",
+      "a": "NGT has NO hard cap. Unlike Bitcoin's 21 million limit, NGT uses a dynamic emission model: emission_rate = base_rate / (1 + network_load_factor). More network activity means less NGT per action. Scarcity comes from demand, not artificial limits. The network should grow forever — knowledge is infinite — so new contributors should always be incentivized."
+    },
+    {
+      "q": "How does validator selection work?",
+      "a": "Validators are selected deterministically using: validators = PRF(prevBlockHash, entryId) → choose N validators. This uses a pseudorandom function seeded by the previous block hash (unpredictable ahead of time) and the entry's unique ID. Default: 5 validators per entry, requiring 3-of-5 to finalize. Minimum stake for validators: 100 NGT. The algorithm is deterministic — all nodes compute the same validator set for any given entry."
+    },
+    {
+      "q": "What languages is SynapseNet written in?",
+      "a": "SynapseNet v0.1.0-alphaV3: C++ (node daemon synapsed), Go (synapseide terminal IDE), TypeScript/JS (VS Code extension), Python (sandboxed scoring/rules). Build: CMake (C++), go build (Go). In v0.1.0-alphaV4, Go is being eliminated — the Go IDE is rewritten in C++ and wrapped with a Tauri (Rust + TypeScript/Svelte) desktop app. Final stack: C++ + Rust (Tauri) + TypeScript/Svelte."
+    },
+    {
+      "q": "How many tests does SynapseNet have?",
+      "a": "As of February 23, 2026: 230/230 tests passing (ctest --test-dir KeplerSynapseNet/build --output-on-failure). The test suite covers: PoE consensus, NAAN agent runtime/scheduler/score/coordination/pipeline, wallet/crypto, quantum security, network/scale/discovery, privacy, Tor routing/bridges, TUI navigation, update manifest/installer, implant compatibility, and determinism replay. Located in KeplerSynapseNet/tests/ (67+ test files)."
+    }
+  ]
+}
