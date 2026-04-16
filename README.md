@@ -10,6 +10,10 @@ GitHub repositories:
 - SynapseNet docs: https://github.com/anakrypt-kepler/SynapseNet
 - SynapseNet AI: https://github.com/anakrypt-kepler/Synapsenetai
 
+<p align="center">
+  <a href="https://github.com/anakrypt-kepler/what-everyone-wont-tell-you-about-using-ai-the-right-way-by-kepler"><img src="https://img.shields.io/badge/AI_Tutorial-000000?style=for-the-badge&logo=readme&logoColor=white" alt="AI Tutorial" /></a>
+</p>
+
 ## Local Preview
 
 This project is a static website and can be served locally with any static file server.
